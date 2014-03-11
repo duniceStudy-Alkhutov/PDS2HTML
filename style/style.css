@@ -1,0 +1,141 @@
+.wrapper{
+    background: white;
+}
+div .header{
+    height: 82px;
+    background: #212121;
+}
+
+.content{
+
+}
+
+.panel_left{
+    vertical-align: top;
+    display: inline-block;
+    background: #5c5c5c;
+    width: 200px;
+    height: 600px;
+}
+
+.panel_right{
+
+}
+
+.margin-all{
+    margin: 10px;
+}
+
+#navigation_left_panel {
+    border:3px solid #3e4547;
+
+    box-shadow:2px 2px 8px #000000;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+#navigation_left_panel, #navigation_left_panel ul {
+    list-style:none;
+    padding:0;
+    width:200px;
+}
+#navigation_left_panel ul {
+    position:relative;
+    z-index:-1;
+}
+#navigation_left_panel li {
+    position:relative;
+    z-index:100;
+}
+#navigation_left_panel ul li {
+    margin-top:-23px;
+
+    -moz-transition:  0.4s linear 0.4s;
+    -ms-transition: 0.4s linear 0.4s;
+    -o-transition: 0.4s linear 0.4s;
+    -webkit-transition: 0.4s linear 0.4s;
+    transition: 0.4s linear 0.4s;
+}
+#navigation_left_panel li a {
+    background-color:#d4d5d8;
+    color:#000;
+    display:block;
+    font-size:12px;
+    font-weight:bold;
+    line-height:28px;
+    outline:0;
+    padding-left:15px;
+    text-decoration:none;
+}
+#navigation_left_panel li a.sub {
+    /*background:#d4d5d8 url("../images/down.gif") no-repeat;*/
+}
+#navigation_left_panel li a + img {
+    cursor:pointer;
+    display:none;
+    height:28px;
+    left:0;
+    position:absolute;
+    top:0;
+    width:200px;
+}
+#navigation_left_panel li a img {
+    border-width:0px;
+    height:24px;
+    line-height:28px;
+    margin-right:8px;
+    vertical-align:middle;
+    width:24px;
+}
+#navigation_left_panel li a:hover {
+    background-color:#bcbdc1;
+}
+#navigation_left_panel ul li a {
+    background-color:#eee;
+    border-bottom:1px solid #ccc;
+    color:#000;
+    font-size:11px;
+    line-height:22px;
+}
+#navigation_left_panel ul li a:hover {
+    background-color:#ddd;
+    color:#444;
+}
+#navigation_left_panel ul li a img {
+    /*background: url("../images/bulb.png") no-repeat;*/
+    border-width:0px;
+    height:16px;
+    line-height:22px;
+    margin-right:5px;
+    vertical-align:middle;
+    width:16px;
+}
+#navigation_left_panel ul li:nth-child(odd) a img {
+    /*background:url("../images/bulb2.png") no-repeat;*/
+}
+#navigation_left_panel a.sub:focus {
+    background:#bcbdc1;
+    outline:0;
+}
+#navigation_left_panel a:focus ~ ul li {
+    margin-top:0;
+
+    -moz-transition:  0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linears;
+    -webkit-transition: 0.4s linears;
+    transition: 0.4s linear;
+}
+#navigation_left_panel a:focus + img, #navigation_left_panel a:active + img {
+    display:block;
+}
+#navigation_left_panel a.sub:active {
+    background:#bcbdc1;
+    outline:0;
+}
+#navigation_left_panel a:active ~ ul li {
+    margin-top:0;
+}
+#navigation_left_panel ul:hover {
+    display:block;
+}
