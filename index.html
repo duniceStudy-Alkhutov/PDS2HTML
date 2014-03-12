@@ -6,33 +6,92 @@
     </head>
     <body>
     <div class="wrapper">
-        <div class="header" >
-            <img src="style/images/logo.png" alt="METRONIC" style="margin: 25px">
-            <div style="float: right; margin-right: 15px;vertical-align: middle; display: block" >
-                <img src="style/images/notify.jpg" alt="notify" class="margin-all">
-                <img src="style/images/messages.jpg" alt="messages" class="margin-all">
-                <img src="style/images/korobki.jpg" alt="korobki" class="margin-all">
-                <img src="style/images/bob_nilson.jpg" >
-                <span style="color: whitesmoke;" class="margin-all">Bob Nilson</span>
-                <img src="style/images/arrow_down.jpg" alt="" class="margin-all">
+        <div class="header" style="min-width: 625px" >
+            <img height="14px" src="style/images/logo.png" alt="METRONIC" style="margin: 15px">
+            <div style="float: right; margin-right: 15px; display: block; height: 42px;" id="user">
+                <img src="style/images/notify.jpg" alt="notify">
+                <img src="style/images/messages.jpg" alt="messages" >
+                <img src="style/images/korobki.jpg" alt="korobki" >
+                <img style="height: 28px; margin-top: 8px" src="style/images/bob_nilson.jpg" >
+                <span>Bob Nilson</span>
+                <!--<img style="height: 10px;vertical-align: middle" src="style/images/arrow_down.jpg" alt="">-->
             </div>
         </div>
-        <div class="panel_left">
-            <ul style="margin-left: -20px" class="navigation_left_panel">
-                <li class="margin-all"><a href="#"><img src="style/images/clock.png" alt="Today">Today</a> </li>
-                <li class="margin-all"><a href="#"><img src="style/images/inbox.png" alt="Inbox/Outbox">Inbox/Outbox</a> </li>
-                <li class="margin-all"><a href="#"><img src="style/images/calendar.png" alt="Calendar">Calendar</a> </li>
-                <li class="margin-all sub"><a href="#" <img src="style/images/tasks.png" alt="Tasks">Tasks
-                    <ul>
-                        <li><a href="#">Best Moments</a> </li>
-                        <li><a href="#">Another Task List</a> </li>
-                        <li><a href="#">Add New +</a> </li>
-                    </ul>
-                </li>
-            </ul>
+        <div id="container">
+            <div class="panel_left" >
+                <ul id="navigation_left_panel" style="margin-top: 3px">
+                    <li ><a href="#"><img src="style/images/clock.png" alt="Today">Today<img id="menu_arrow" style="height: 10px;width: 10px;" src="style/images/arrow_left.png"></a> </li>
+                    <li ><a href="#"><img src="style/images/inbox.png" alt="Inbox/Outbox">Inbox/Outbox</a> </li>
+                    <li ><a href="#"><img src="style/images/calendar.png" alt="Calendar">Calendar</a> </li>
+                    <li class="sub" tabindex="1"><a href="#"><img height="20" src="style/images/tasks.png" alt="Tasks">Tasks</a>
+                        <ul>
+                            <li><a href="#">Best Moments</a> </li>
+                            <li><a href="#">Another Task List</a> </li>
+                            <li><a href="#">Add New +</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="content" >
+                <input type="button">
+            </div>
+            <div class="panel_right">
+                <table id="control" >
+                    <col width="100">
+                    <col width="310">
+                    <tr>
+                        <td class="td-left">Title</label></td>
+                        <td><input type="text" placeholder=":)"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-left"><label>List/Agenda</label></td>
+                        <td><button type="submit">Best Momemts</button><input type="radio" checked><label>Tasks</label><input type="radio"><label>Meeting</label></td>
+                    </tr>
+                    <tr>
+                        <td class="td-left"><label>Assign to</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-left"><label>Priority</label></td>
+                        <td><input type="button" placeholder="Urgent"><label>Status</label><input type="button" placeholder="Pending"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-left"><label>Start</label></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-left"><label>Stop</label></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-left"><label>Reminder</label></td>
+                        <td><input type="datetime-local" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td class="td-left"><label>Location</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-left"><label>Estimate</label></td>
+                        <td><input type="time" value="12:01"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-left"><label>Attach</label></td>
+                        <td><input type="file"></td>
+                    </tr>
+
+                </table>
+                <!--<label class="control-label-md1">Title</label><input class="control-label-md2" type="text" size="20" placeholder="Search">-->
+                <!--<br>-->
+                <!--<label class="control-label-md1">Title</label><div class="control-label-md2">-->
+                        <!--<input type="button"><input type="radio"><label>Tasks</label><input type="radio"><label>Meeting</label>-->
+                    <!--</div>-->
+                <!--<br>-->
+                <!--<label class="control-label-md1">Assign</label><input class="control-label-md2" type="text" size="20" placeholder="">-->
+                <!--<br>-->
+
+            </div>
         </div>
-        <div class="content"></div>
-        <div class="panel_right"></div>
     </div>
     </body>
 </html>
