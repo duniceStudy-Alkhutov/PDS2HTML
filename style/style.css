@@ -102,7 +102,7 @@ div .header{
     z-index:100;
 }
 #navigation_left_panel ul li {
-    margin-top:-24px;
+    margin-top:-32px;
 
     -moz-transition:  0.4s linear 0.4s;
     -ms-transition: 0.4s linear 0.4s;
@@ -125,7 +125,7 @@ div .header{
     border-bottom: 1px solid #5c5c5c;
 }
 #navigation_left_panel li a.sub {
-    background:#3d3d3d;
+    background:#3d3d3d url("images/arrow_left.png") no-repeat right ;
     margin-bottom: 1px;
     border-bottom: 1px solid #5c5c5c;
     /*url("images/arrow_left.png") no-repeat;*/
@@ -154,8 +154,8 @@ div .header{
 #navigation_left_panel ul li a {
     background-color:#3d3d3d;
     color:white;
-    font-size:11px;
-    line-height:22px;
+    font-size:14px;
+    line-height:30px;
     padding-left: 40px;
     border: none;
 }
@@ -164,7 +164,7 @@ div .header{
     color:white;
 }
 #navigation_left_panel ul li a img {
-    background: url("images/arrow_left.png") no-repeat;
+    background: url("images/arrow_left.png") no-repeat right;
     border-width:0;
     height:20px;
     line-height:22px;
@@ -211,7 +211,7 @@ div .header{
 }
 .panel-search {
     margin: 0;
-    padding: 55px 10px 15px 15px ;
+    padding: 70px 5px 15px 15px ;
 }
 .panel-search .input-box{
     width: 300px;
@@ -220,13 +220,14 @@ div .header{
 .search-input{
     width: 270px;
     border: none;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: bold;
     padding-bottom: 6px;
 }
 .input-box a{
-    padding-bottom: 5px;
+    padding-bottom: 0px;
 }
-.input-box li a:hover{
+.input-box a:hover{
     background-color: white;
 }
 .panel-search .input-box input{
@@ -244,4 +245,70 @@ div .header{
     padding: 20px;
     width: 30px;
     float: right;
+}
+.styled-select{
+    overflow: hidden;
+    background: url("images/calendar-custom.png") no-repeat right transparent;
+    width: 250px;
+    padding-left: 5px;
+    font-size: 14px;
+    border: 1px solid #bcbdc1;
+    height: 25px;
+}
+.styled-select-date{
+    overflow: hidden;
+    border: 1px solid #c4c4c4;
+    background: url("images/calendar-custom.png") no-repeat right transparent;
+    height: 25px;
+}
+.content h1 {
+    margin: 15px;
+}
+.address-box{
+    background: lightgray;
+    margin: 0 20px 10px 20px;
+    padding: 10px;
+}
+.inbox-box{
+    background: #009cf7;
+    color: white;
+    font-weight: bold;
+    margin: 0 20px;
+    padding: 10px;
+}
+.outbox-box{
+    background: #f4f9fd;
+    color: #009cf7;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0 20px;
+}
+.mail-box{
+    margin: 10px 20px 0 20px;
+}
+.mail-box-header{
+    padding: 10px;
+    background: #eef4f7;
+}
+.mail-box-header input{
+}
+.mail-box-header select{
+    color: white;
+    background: #498dff;
+    border: none;
+    padding: 3px;
+}
+.mail-box-header-right-box{
+    float: right;
+}
+.mail-box-header-right-box div img{
+    vertical-align: middle;
+}
+.mail-box-header-right-box div span{
+    margin: 0;
+}
+.mail-box-header span{
+}
+.message-box{
+
 }

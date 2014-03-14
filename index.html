@@ -28,7 +28,7 @@
                     <li id="li-search">
 
                         <div class="panel-search">
-                            <div class="input-box">
+                            <div class="input-box" >
                                 <a href="#" style="line-height: 0px; padding: 0; margin: 0;" >
                                     <input class="search-input" type="search" placeholder="Search...">
                                     <input type="button" class="submit" value=" ">
@@ -60,43 +60,34 @@
                         </ul>
                     </li>
                 </ul>
-
-
-
-                <!--<ul id="navigation_left_panel" >-->
-                    <!--<li >-->
-                        <!--<img id="menu-item" src="style/images/menu.png" alt="menu">-->
-                    <!--</li>-->
-                    <!--<li id="li-search">-->
-
-                            <!--<div class="panel-search">-->
-                                <!--<div class="input-box">-->
-                                    <!--<a href="#" style="line-height: 0px; padding: 0; margin: 0;" >-->
-                                        <!--<input class="search-input" type="search" placeholder="Search...">-->
-                                        <!--<input type="button" class="submit" value=" ">-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                            <!--</div>-->
-
-                    <!--</li>-->
-                    <!--<li ><a href="#"><img src="style/images/clock.png" alt="Today">Today<img id="menu_arrow" style="height: 10px;width: 10px;" src="style/images/arrow_left.png"></a> </li>-->
-                    <!--<li ><a href="#"><img src="style/images/inbox.png" alt="Inbox/Outbox">Inbox/Outbox</a> </li>-->
-                    <!--<li ><a href="#"><img src="style/images/calendar.png" alt="Calendar">Calendar</a> </li>-->
-                    <!--<li class="sub" tabindex="1"><a href="#"><img height="20" src="style/images/tasks.png" alt="Tasks">Tasks</a>-->
-                        <!--<ul>-->
-                            <!--<li><a href="#">Best Moments</a> </li>-->
-                            <!--<li><a href="#">Another Task List</a> </li>-->
-                            <!--<li><a href="#">Add New +</a> </li>-->
-                        <!--</ul>-->
-                    <!--</li>-->
-                    <!--<li><a href="#">Coffee</a> </li>-->
-                <!--</ul>-->
             </div>
             <div class="content" >
-                <input type="button">
+                <h1>Input/Output</h1>
+                <div class="address-box">Home</div>
+                <div class="type-box">
+                    <div class="inbox-box">Inbox(3)</div>
+                    <div class="outbox-box">Outbox</div>
+                </div>
+                <div class="mail-box">
+                    <div class="mail-box-header">
+                        <input type="checkbox">
+                        <select>
+                            <option selected>Accept/Decline</option>
+                            <option>Accept</option>
+                            <option>Decline</option>
+                        </select>
+                        <div class="mail-box-header-right-box">
+                            <span>1-30 of 789</span>
+                            <a href="#"><img src="style/images/arrow-mail-left.png"></a>
+                            <a href="#"><img src="style/images/arrow-mail-right.png"></a>
+                        </div>
+                    </div>
+                    <div class="message-box"></div>
+                </div>
+
             </div>
             <div class="panel_right">
-                <table id="control" >
+                <table cellspacing="15" id="control" >
                     <col width="100">
                     <col width="310">
                     <tr>
@@ -105,7 +96,7 @@
                     </tr>
                     <tr>
                         <td class="td-left"><label>List/Agenda</label></td>
-                        <td><select>
+                        <td><select style="width: 100px; border: 1px solid #3d3d3d; background: #fdfdfd">
                             <option selected value="0">Best moments</option>
                             <option value="1">Option 1</option>
                             <option value="2">Option 2</option>
@@ -114,7 +105,11 @@
                     </tr>
                     <tr>
                         <td class="td-left"><label>Assign to</label></td>
-                        <td><input type="text"></td>
+                        <td><select class="styled-select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select></td>
                     </tr>
                     <tr>
                         <td class="td-left"><label>Priority</label></td>
@@ -122,7 +117,7 @@
                     </tr>
                     <tr>
                         <td class="td-left"><label>Start</label></td>
-                        <td><input type="date"></td>
+                        <td><input class="styled-select-date" type="date"></td>
                     </tr>
                     <tr>
                         <td class="td-left"><label>Stop</label></td>
