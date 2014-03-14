@@ -10,6 +10,8 @@
             <img height="14px" src="style/images/logo.png" alt="METRONIC" style="margin: 15px">
             <div style="float: right; margin-right: 15px; display: block; height: 42px;" id="user">
                 <img src="style/images/notify.jpg" alt="notify">
+
+
                 <img src="style/images/messages.jpg" alt="messages" >
                 <img src="style/images/korobki.jpg" alt="korobki" >
                 <img style="height: 28px; margin-top: 8px" src="style/images/bob_nilson.jpg" >
@@ -19,18 +21,76 @@
         </div>
         <div id="container">
             <div class="panel_left" >
-                <ul id="navigation_left_panel" style="margin-top: 3px">
-                    <li ><a href="#"><img src="style/images/clock.png" alt="Today">Today<img id="menu_arrow" style="height: 10px;width: 10px;" src="style/images/arrow_left.png"></a> </li>
-                    <li ><a href="#"><img src="style/images/inbox.png" alt="Inbox/Outbox">Inbox/Outbox</a> </li>
-                    <li ><a href="#"><img src="style/images/calendar.png" alt="Calendar">Calendar</a> </li>
-                    <li class="sub" tabindex="1"><a href="#"><img height="20" src="style/images/tasks.png" alt="Tasks">Tasks</a>
+                <ul id="navigation_left_panel">
+                    <li >
+                        <img id="menu-item" src="style/images/menu.png" alt="menu">
+                    </li>
+                    <li id="li-search">
+
+                        <div class="panel-search">
+                            <div class="input-box">
+                                <a href="#" style="line-height: 0px; padding: 0; margin: 0;" >
+                                    <input class="search-input" type="search" placeholder="Search...">
+                                    <input type="button" class="submit" value=" ">
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li><a href="#"><img src="style/images/clock.png" />Today</a></li>
+                    <li><a href="#" class="sub" tabindex="1"><img src="style/images/inbox.png" />Inbox/Outbox</a>
                         <ul>
-                            <li><a href="#">Best Moments</a> </li>
-                            <li><a href="#">Another Task List</a> </li>
-                            <li><a href="#">Add New +</a> </li>
+                            <li><a href="#">Inbox</a></li>
+                            <li><a href="#">Outbox</a></li>
+                            <li><a href="#">Somebox</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="sub" tabindex="1"><img src="style/images/calendar.png" />Calendar</a>
+                        <ul>
+                            <li><a href="#">Calen</a></li>
+                            <li><a href="#">daR</a></li>
+                            <li><a href="#">asd</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="sub" tabindex="1"><img src="style/images/tasks.png" />Tasks</a>
+                        <ul>
+                            <li><a href="#">Best Moments</a></li>
+                            <li><a href="#">Another Task List</a></li>
+                            <li><a href="#">Add New +</a></li>
                         </ul>
                     </li>
                 </ul>
+
+
+
+                <!--<ul id="navigation_left_panel" >-->
+                    <!--<li >-->
+                        <!--<img id="menu-item" src="style/images/menu.png" alt="menu">-->
+                    <!--</li>-->
+                    <!--<li id="li-search">-->
+
+                            <!--<div class="panel-search">-->
+                                <!--<div class="input-box">-->
+                                    <!--<a href="#" style="line-height: 0px; padding: 0; margin: 0;" >-->
+                                        <!--<input class="search-input" type="search" placeholder="Search...">-->
+                                        <!--<input type="button" class="submit" value=" ">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                    <!--</li>-->
+                    <!--<li ><a href="#"><img src="style/images/clock.png" alt="Today">Today<img id="menu_arrow" style="height: 10px;width: 10px;" src="style/images/arrow_left.png"></a> </li>-->
+                    <!--<li ><a href="#"><img src="style/images/inbox.png" alt="Inbox/Outbox">Inbox/Outbox</a> </li>-->
+                    <!--<li ><a href="#"><img src="style/images/calendar.png" alt="Calendar">Calendar</a> </li>-->
+                    <!--<li class="sub" tabindex="1"><a href="#"><img height="20" src="style/images/tasks.png" alt="Tasks">Tasks</a>-->
+                        <!--<ul>-->
+                            <!--<li><a href="#">Best Moments</a> </li>-->
+                            <!--<li><a href="#">Another Task List</a> </li>-->
+                            <!--<li><a href="#">Add New +</a> </li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li><a href="#">Coffee</a> </li>-->
+                <!--</ul>-->
             </div>
             <div class="content" >
                 <input type="button">
@@ -45,7 +105,12 @@
                     </tr>
                     <tr>
                         <td class="td-left"><label>List/Agenda</label></td>
-                        <td><button type="submit">Best Momemts</button><input type="radio" checked><label>Tasks</label><input type="radio"><label>Meeting</label></td>
+                        <td><select>
+                            <option selected value="0">Best moments</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select><input type="radio" checked><label>Tasks</label><input type="radio"><label>Meeting</label></td>
                     </tr>
                     <tr>
                         <td class="td-left"><label>Assign to</label></td>
