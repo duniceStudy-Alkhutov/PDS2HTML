@@ -63,7 +63,11 @@
             </div>
             <div class="content" >
                 <h1>Input/Output</h1>
-                <div class="address-box">Home</div>
+                <div class="address-box">
+                    <img src="style/images/home.png">
+                    <span>Home</span>
+                    <img src="style/images/arrow-right.png">
+                </div>
                 <div class="type-box">
                     <div class="inbox-box">Inbox(3)</div>
                     <div class="outbox-box">Outbox</div>
@@ -90,7 +94,7 @@
                     </div>
                     <div class="message-box">
                         <div>
-                            <div class="message-box-line message-bg-dark">
+                            <div class="message-box-line message-bg-dark bold-text">
                                 <div>
                                     <input type="checkbox">
                                     <img src="style/images/star-off_2.png" alt="Mark as important">
@@ -285,11 +289,14 @@
                     <tr>
                         <td class="td-left"><label>List/Agenda</label></td>
                         <td><select style="width: 100px; border: 1px solid #3d3d3d; background: #fdfdfd">
-                            <option selected value="0">Best moments</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                        </select><input type="radio" checked><label>Tasks</label><input type="radio"><label>Meeting</label></td>
+                                <option selected value="0">Best moments</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <input type="radio" checked>
+                            <label>Tasks</label>
+                            <input type="radio"><label>Meeting</label></td>
                     </tr>
                     <tr>
                         <td class="td-left"><label>Assign to</label></td>
@@ -325,7 +332,10 @@
                     </tr>
                     <tr>
                         <td class="td-left"><label>Attach</label></td>
-                        <td><input type="file"></td>
+                        <td><div class="new-attach">
+                            <span>Select file</span>
+                            <input type="file" name="file" id="file" size="1" class="attach-custom">
+                        </div> </td>
                     </tr>
 
                 </table>
