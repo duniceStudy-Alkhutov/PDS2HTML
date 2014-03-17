@@ -114,7 +114,7 @@ div .header{
     border-bottom: 1px solid #5c5c5c;
 }
 #navigation_left_panel li a.sub {
-    background:#3d3d3d url("images/arrow_left_2.png") no-repeat right;
+    background:#3d3d3d url("images/arrow_left_btn.png") no-repeat right;
     margin-bottom: 1px;
     border-bottom: 1px solid #5c5c5c;
 }
@@ -122,10 +122,10 @@ div .header{
     cursor:pointer;
     left:0;
     position:absolute;
-    top:0px;
-    width:10px;
-    height: 10px;
-    float: right;
+    top:0;
+    /*width:10px;*/
+    /*height: 10px;*/
+    /*float: right;*/
     margin-top: 20px;
 }
 #navigation_left_panel li a img {
@@ -394,15 +394,35 @@ label.css-label {
 
 /***************************************/
 #mail-layer{
-    display: none;
+    /*display: none;*/
 }
 /***************************************/
 #tasks-layer{
-    display: none;
+    /*display: none;*/
+}
+.task-box{
+    display: inline-block;
+    margin: 10px 20px 0 20px;
+}
+.task-box-header>div{
+    display: inline-block;
+    vertical-align: middle;
+    width: 49%;
+}
+.task-box-header>div:nth-child(2){
+    float: right;
+}
+.task-box-content>div{
+    display: inline-block;
+    width: 45%;
+}
+.task-box-line{
+    display: inline-block;
+    vertical-align: middle;
 }
 /***************************************/
 #calendar-layer{
-    /*display: none;*/
+    display: none;
 }
 .calendar-box{
     margin: 0 20px 10px 20px;
