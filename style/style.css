@@ -12,6 +12,14 @@ div .header{
     min-width: 1320px;
     background: #212121;
 }
+.header img{
+    margin: 15px;
+    height: 20px;
+}
+#img_bob{
+    height: 28px;
+    margin-top: 8px;
+}
 
 .content{
 
@@ -106,10 +114,9 @@ div .header{
     border-bottom: 1px solid #5c5c5c;
 }
 #navigation_left_panel li a.sub {
-    background:#3d3d3d url("images/arrow_left.png") no-repeat right ;
+    background:#3d3d3d url("images/arrow_left_2.png") no-repeat right;
     margin-bottom: 1px;
     border-bottom: 1px solid #5c5c5c;
-    /*url("images/arrow_left.png") no-repeat;*/
 }
 #navigation_left_panel li a + img {
     cursor:pointer;
@@ -145,7 +152,7 @@ div .header{
     color:white;
 }
 #navigation_left_panel ul li a img {
-    background: url("images/arrow_left.png") no-repeat right;
+    background: url("images/arrow-right.png") no-repeat right;
     border-width:0;
     height:20px;
     line-height:22px;
@@ -403,6 +410,7 @@ label.css-label {
     max-width: 620px;
 }
 .calendar-toggle{
+    margin-bottom: 7px;
 }
 .calendar-toggle>div{
 
@@ -477,8 +485,9 @@ label.css-label {
     padding: 0 5px;
     height: 20px;
     text-align: center;
+    background: #3d3d3d;
 }
-#table-header tr {
+#table-header td {
     background: #eeeeee;
 }
 .table_text{
