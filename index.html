@@ -6,7 +6,7 @@
     </head>
     <body>
     <div class="wrapper">
-        <div class="header" style="min-width: 625px" >
+        <div class="header"  >
             <img height="14px" src="style/images/logo.png" alt="METRONIC" style="margin: 15px">
             <div style="float: right; margin-right: 15px; display: block; height: 42px;" id="user">
                 <img src="style/images/notify.jpg" alt="notify">
@@ -62,17 +62,18 @@
                 </ul>
             </div>
             <div class="content" >
-                <h1>Input/Output</h1>
-                <div class="address-box">
-                    <img src="style/images/home.png">
-                    <span>Home</span>
-                    <img src="style/images/arrow-right.png">
-                </div>
-                <div class="type-box">
-                    <div class="inbox-box">Inbox(3)</div>
-                    <div class="outbox-box">Outbox</div>
-                </div>
-                <div class="mail-box">
+                <div id="mail-layer">
+                    <h1>Input/Output</h1>
+                    <div class="address-box">
+                        <img src="style/images/home.png">
+                        <span>Home</span>
+                        <img src="style/images/arrow-right.png">
+                    </div>
+                    <div class="type-box">
+                        <div class="inbox-box">Inbox(3)</div>
+                        <div class="outbox-box">Outbox</div>
+                    </div>
+                    <div class="mail-box">
                     <div class="mail-box-header">
                         <div>
                             <div class="mail-box-header-left-box">
@@ -97,7 +98,9 @@
                             <div class="message-box-line message-bg-dark bold-text">
                                 <div>
                                     <input type="checkbox">
-                                    <img src="style/images/star-off_2.png" alt="Mark as important">
+                                    <input type="checkbox" name="mycheckbox1" id="mycheckbox1" class="css-checkbox">
+                                    <label for="mycheckbox1" class="css-label"></label>
+                                    <!--<img src="style/images/star-off_2.png" alt="Mark as important">-->
                                     <span>New server for data-center needed</span>
                                 </div>
                                 <div>
@@ -112,7 +115,8 @@
                             <div class="message-box-line message-bg-light bold-text">
                                 <div>
                                     <input type="checkbox">
-                                    <img src="style/images/star-off_2.png" alt="Mark as important">
+                                    <input type="checkbox" name="mycheckbox2" id="mycheckbox2" class="css-checkbox">
+                                    <label for="mycheckbox2" class="css-label"></label>
                                     <span>Please help us to customization of new secure server</span>
                                 </div>
                                 <div>
@@ -127,7 +131,8 @@
                             <div class="message-box-line message-bg-dark">
                                 <div>
                                     <input type="checkbox">
-                                    <img src="style/images/star-off_2.png" alt="Mark as important">
+                                    <input type="checkbox" name="mycheckbox3" id="mycheckbox3" class="css-checkbox">
+                                    <label for="mycheckbox3" class="css-label"></label>
                                     <span>Lorem ipsum dolor sit amet</span>
                                 </div>
                                 <div>
@@ -142,7 +147,8 @@
                             <div class="message-box-line message-bg-light">
                                 <div>
                                     <input type="checkbox">
-                                    <img src="style/images/star-off_2.png" alt="Mark as important">
+                                    <input type="checkbox" name="mycheckbox4" id="mycheckbox4" class="css-checkbox">
+                                    <label for="mycheckbox4" class="css-label"></label>
                                     <span>Dolor sit amet, consectetuer adipiscing</span>
                                 </div>
                                 <div>
@@ -157,7 +163,8 @@
                             <div class="message-box-line message-bg-dark">
                                 <div>
                                     <input type="checkbox">
-                                    <img src="style/images/star-on.png" alt="Mark as important">
+                                    <input type="checkbox" name="mycheckbox5" id="mycheckbox5" class="css-checkbox" checked>
+                                    <label for="mycheckbox5" class="css-label"></label>
                                     <span>Lorem ipsum dolor sit amet</span>
                                 </div>
                                 <div>
@@ -172,7 +179,8 @@
                             <div class="message-box-line message-bg-light">
                                 <div>
                                     <input type="checkbox">
-                                    <img src="style/images/star-on.png" alt="Mark as important">
+                                    <input type="checkbox" name="mycheckbox6" id="mycheckbox6" class="css-checkbox" checked>
+                                    <label for="mycheckbox6" class="css-label"></label>
                                     <span>Dolor sit amet, consectetuer adipiscing</span>
                                 </div>
                                 <div>
@@ -187,7 +195,8 @@
                             <div class="message-box-line message-bg-dark">
                                 <div>
                                     <input type="checkbox">
-                                    <img src="style/images/star-on.png" alt="Mark as important">
+                                    <input type="checkbox" name="mycheckbox7" id="mycheckbox7" class="css-checkbox" checked>
+                                    <label for="mycheckbox7" class="css-label"></label>
                                     <span>Lorem ipsum dolor sit amet</span>
                                 </div>
                                 <div>
@@ -202,7 +211,8 @@
                             <div class="message-box-line message-bg-light">
                                 <div>
                                     <input type="checkbox">
-                                    <img src="style/images/star-off_2.png" alt="Mark as important">
+                                    <input type="checkbox" name="mycheckbox8" id="mycheckbox8" class="css-checkbox">
+                                    <label for="mycheckbox8" class="css-label"></label>
                                     <span>Dolor sit amet, consectetuer adipiscing</span>
                                 </div>
                                 <div>
@@ -217,7 +227,8 @@
                             <div class="message-box-line message-bg-dark">
                                 <div>
                                     <input type="checkbox">
-                                    <img src="style/images/star-off_2.png" alt="Mark as important">
+                                    <input type="checkbox" name="mycheckbox9" id="mycheckbox9" class="css-checkbox">
+                                    <label for="mycheckbox9" class="css-label"></label>
                                     <span>Lorem ipsum dolor sit amet</span>
                                 </div>
                                 <div>
@@ -232,7 +243,8 @@
                             <div class="message-box-line message-bg-light">
                                 <div>
                                     <input type="checkbox">
-                                    <img src="style/images/star-off_2.png" alt="Mark as important">
+                                    <input type="checkbox" name="mycheckbox10" id="mycheckbox10" class="css-checkbox">
+                                    <label for="mycheckbox10" class="css-label"></label>
                                     <span>Dolor sit amet, consectetuer adipiscing</span>
                                 </div>
                                 <div>
@@ -247,7 +259,8 @@
                             <div class="message-box-line message-bg-dark">
                                 <div>
                                     <input type="checkbox">
-                                    <img src="style/images/star-on.png" alt="Mark as important">
+                                    <input type="checkbox" name="mycheckbox11" id="mycheckbox11" class="css-checkbox" checked>
+                                    <label for="mycheckbox11" class="css-label"></label>
                                     <span>Lorem ipsum dolor sit amet</span>
                                 </div>
                                 <div>
@@ -262,7 +275,8 @@
                             <div class="message-box-line message-bg-light">
                                 <div>
                                     <input type="checkbox">
-                                    <img src="style/images/star-on.png" alt="Mark as important">
+                                    <input type="checkbox" name="mycheckbox12" id="mycheckbox12" class="css-checkbox" checked>
+                                    <label for="mycheckbox12" class="css-label"></label>
                                     <span>Dolor sit amet, consectetuer adipiscing</span>
                                 </div>
                                 <div>
@@ -275,8 +289,124 @@
                         </div>
 
                     </div>
+                    </div>
                 </div>
+                <div id="calendar-layer">
+                    <h1>Calendar</h1>
+                    <div class="address-box">
+                        <img src="style/images/home.png">
+                        <span>Home</span>
+                        <img src="style/images/arrow-right.png">
+                    </div>
+                    <div class="calendar-box">
+                        <div class="calendar-toggle">
+                            <div>
+                                <div id="week_day">week day</div>
+                                <div id="month">month</div>
+                                <div id="today">today</div>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="calendar-table">
+                            <table bgcolor="#dddddd" border=0 ellpadding=2 cellspacing=1 width="100%">
+                                <tr id="table-header" bgcolor="#969696">
+                                    <td bgcolor="#969696">SUN</td>
+                                    <td>MON</td>
+                                    <td>TUE</td>
+                                    <td>WED</td>
+                                    <td>THU</td>
+                                    <td>FRI</td>
+                                    <td>SAT</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table_text blind_text">27</span></td>
+                                    <td><span class="table_text blind_text">28</span></td>
+                                    <td><span class="table_text blind_text">29</span></td>
+                                    <td><span class="table_text blind_text">30</span></td>
+                                    <td><span class="table_text blind_text">31</span></td>
+                                    <td>
+                                        <span class="table_text">1</span>
+                                        <br>
+                                        <div id="fri_1"><span class="white_text">All day<p>Event</span></div>
+                                    </td>
+                                    <td><span class="table_text ">2</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table_text ">3</span></td>
+                                    <td><span class="table_text ">4</span></td>
+                                    <td><span class="table_text ">5</span></td>
+                                    <td><span class="table_text ">6</span></td>
+                                    <td><span class="table_text ">7</span></td>
+                                    <td><span class="table_text ">8</span></td>
+                                    <td><span class="table_text ">9</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="table_text ">10</span>
+                                        <br>
+                                        <div id="long_day"><span>Long Event</span></div>
+                                    </td>
+                                    <td><span class="table_text ">11</span></td>
+                                    <td><span class="table_text ">12</span></td>
+                                    <td><span class="table_text ">13</span></td>
+                                    <td><span class="table_text ">14</span></td>
+                                    <td>
+                                        <span class="table_text ">15</span>
+                                        <br>
+                                        <div id="fri_15_1"><span>10:30a<p>Meeting</span></div>
+                                        <div id="fri_15_2"><span>12p<p>Lunch</span></div>
+                                    </td>
+                                    <td>
+                                        <span class="table_text ">16</span>
+                                        <br>
+                                        <div id="sun_16"><span>7p<p>Birthday<p>Party</span></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table_text ">17</span></td>
+                                    <td><span class="table_text ">18</span></td>
+                                    <td>
+                                        <span class="table_text ">19</span>
+                                        <br>
+                                        <div id="tue_19"><span>4p<p>Repeating<p>Event</span></div>
+                                    </td>
+                                    <td><span class="table_text ">20</span></td>
+                                    <td><span class="table_text ">21</span></td>
+                                    <td><span class="table_text ">22</span></td>
+                                    <td><span class="table_text ">23</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table_text ">24</span></td>
+                                    <td><span class="table_text ">25</span></td>
+                                    <td><span class="table_text ">26</span></td>
+                                    <td><span class="table_text ">27</span></td>
+                                    <td>
+                                        <span class="table_text ">28</span>
+                                        <br>
+                                        <div id="click4google"><span>Click fo Google</span></div>
+                                    </td>
+                                    <td><span class="table_text ">29</span></td>
+                                    <td><span class="table_text ">30</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table_text blind_text">1</span></td>
+                                    <td><span class="table_text blind_text">2</span></td>
+                                    <td><span class="table_text blind_text">3</span></td>
+                                    <td><span class="table_text blind_text">4</span></td>
+                                    <td><span class="table_text blind_text">5</span></td>
+                                    <td><span class="table_text blind_text">6</span></td>
+                                    <td><span class="table_text blind_text">7</span></td>
+                                </tr>
 
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="tasks-layer">
+
+                </div>
             </div>
             <div class="panel_right">
                 <table cellspacing="15" id="control" >

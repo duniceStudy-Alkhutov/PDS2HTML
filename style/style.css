@@ -9,6 +9,7 @@
 }
 div .header{
     height: 55px;
+    min-width: 1320px;
     background: #212121;
 }
 
@@ -183,6 +184,7 @@ div .header{
 }
 
 /****************************************************************/
+
 #menu_arrow {
     height: 10px;
     width: 10px;
@@ -351,7 +353,146 @@ div .header{
 .message-bg-dark{
     background: #f8fbfd;
 }
+input[type=checkbox].css-checkbox {
+    display:none;
+}
 
+input[type=checkbox].css-checkbox + label.css-label {
+    padding: 0 10px 0 15px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    height:15px;
+    display:inline-block;
+    line-height:15px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:15px;
+    vertical-align:middle;
+    cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -15px;
+}
+label.css-label {
+    background-image:url(images/csscheckbox.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/***************************************/
+#mail-layer{
+    display: none;
+}
+/***************************************/
+#tasks-layer{
+    display: none;
+}
+/***************************************/
+#calendar-layer{
+    /*display: none;*/
+}
+.calendar-box{
+    margin: 0 20px 10px 20px;
+    padding: 10px;
+    max-width: 620px;
+}
+.calendar-toggle{
+}
+.calendar-toggle>div{
+
+    height: 30px;
+}
+.calendar-toggle div {
+    /*display: inline-block;*/
+    float: right;
+}
+.calendar-toggle div>div{
+    margin: 0 1px;
+    padding: 7px 10px;
+}
+#today{
+    background: #e7e7e7;
+}
+#month{
+    background: #eeeeee;
+}
+#week_day{
+    background: #dddddd;
+}
+.calendar-table{
+    width: 100%;
+}
+.calendar-table table tr{
+    height: 60px;
+    background: #fafafa;
+}
+.calendar-table table tr td{
+    width:  80px;
+    background: #fafafa;
+    vertical-align: top;
+}
+.calendar-table table tr td>div{
+    margin: 2px 2px;
+    padding: 1px;
+}
+.calendar-table table tr td div span{
+    color: white;
+}
+#fri_1{
+    background: #ffb939;
+}
+#fri_15_1{
+    background: #66a3e2;
+}
+#fri_15_2{
+    background: #555555;
+}
+#sun_16{
+    background: #86249b;
+}
+#tue_19{
+    background: #2dab41;
+}
+#long_day{
+    background: #2dab41;
+    position: absolute;
+    min-width: 325px;
+    width: 25.6%;
+    max-width: 345px;
+}
+#click4google{
+    background: #ffb939;
+    position: absolute;
+    min-width: 150px;
+    width: 16%;
+    max-width: 170px;
+}
+#table-header{
+    padding: 0 5px;
+    height: 20px;
+    text-align: center;
+}
+#table-header tr {
+    background: #eeeeee;
+}
+.table_text{
+    float: right;
+    margin-right: 2px;
+}
+.blind_text{
+    color: #afafaf;
+}
+.white_text{
+    color: white;
+}
+
+/***************************************/
 .styled-select{
     overflow: hidden;
     background: url("images/calendar-custom.png") no-repeat right transparent;

@@ -6,3 +6,5 @@
 -remake right-sidebar to custom
 -fix header
 -add datePicker to right-sidebar
+-make calendar-layout
+-make task-layout
