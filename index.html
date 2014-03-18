@@ -2,6 +2,32 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style/style.css">
+        <script src="js/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#hide_add_task_panel").click(function(){
+                    $("#add-task-panel").hide();
+                });
+                $("#show_add_task_panel").click(function(){
+                    $("#add-task-panel").show();
+                });
+                $("#show_inbox").click(function(){
+                    $("#mail-layer").show();
+                    $("#calendar-layer").hide();
+                    $("#tasks-layer").hide();
+                });
+                $("#show_calendar").click(function(){
+                    $("#mail-layer").hide();
+                    $("#calendar-layer").show();
+                    $("#tasks-layer").hide();
+                });
+                $("#show_tasks").click(function(){
+                    $("#mail-layer").hide();
+                    $("#calendar-layer").hide();
+                    $("#tasks-layer").show();
+                });
+            });
+        </script>
         <title>PSD to HTML</title>
     </head>
     <body>
@@ -24,33 +50,31 @@
                         <img id="menu-item" src="style/images/menu.png" alt="menu">
                     </li>
                     <li id="li-search">
-
                         <div class="panel-search">
                             <div class="input-box" >
-                                <a href="#" style="line-height: 0px; padding: 0; margin: 0;" >
+                                <a href="#" id="search-field" tabindex="1" >
                                     <input class="search-input" type="search" placeholder="Search...">
                                     <input type="button" class="submit" value=" ">
                                 </a>
                             </div>
                         </div>
-
                     </li>
                     <li><a href="#"><img src="style/images/clock.png" />Today</a></li>
-                    <li><a href="#" class="sub" tabindex="1"><img src="style/images/inbox.png" />Inbox/Outbox</a>
+                    <li><a href="#" id="show_inbox" class="sub" tabindex="1"><img src="style/images/inbox.png" />Inbox/Outbox</a>
                         <ul>
                             <li><a href="#">Inbox</a></li>
                             <li><a href="#">Outbox</a></li>
                             <li><a href="#">Somebox</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="sub" tabindex="1"><img src="style/images/calendar.png" />Calendar</a>
+                    <li><a href="#" id="show_calendar" class="sub" tabindex="1"><img src="style/images/calendar.png" />Calendar</a>
                         <ul>
                             <li><a href="#">Calen</a></li>
                             <li><a href="#">daR</a></li>
                             <li><a href="#">asd</a> </li>
                         </ul>
                     </li>
-                    <li><a href="#" class="sub" tabindex="1"><img src="style/images/tasks.png" />Tasks</a>
+                    <li><a href="#" id="show_tasks" class="sub" tabindex="1"><img src="style/images/tasks.png" />Tasks</a>
                         <ul>
                             <li><a href="#">Best Moments</a></li>
                             <li><a href="#">Another Task List</a></li>
@@ -403,24 +427,6 @@
                     </div>
                 </div>
                 <div id="tasks-layer">
-                    <!--<h1>Tasks</h1>-->
-                    <!--<div class="address-box">-->
-                        <!--<img src="style/images/home.png">-->
-                        <!--<span>Home</span>-->
-                        <!--<img src="style/images/arrow-right.png">-->
-                    <!--</div>-->
-                    <!--<div class="task-box">-->
-                        <!--<div class="task-box-header">-->
-                            <!--<div><span>Best moments</span></div>-->
-                            <!--<div><img src="style/images/settings.png" alt="settings"></div>-->
-                        <!--</div>-->
-                        <!--<div>-->
-                            <!--<div class="task-box-line">-->
-                                <!--<input type="checkbox">-->
-                                <!--<div><span>This is the first task</span></div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
                     <h1>Tasks</h1>
                     <div class="address-box">
                         <img src="style/images/home.png">
@@ -430,12 +436,73 @@
                     <div class="task-box">
                         <div class="task-box-header">
                             <div><span>Best Moments</span></div>
-                            <div><img src="style/images/settings.png" alt=""></div>
+                            <div class="task-box-header-right"><img src="style/images/settings.png" alt=""></div>
                         </div>
                         <div class="task-box-content">
                             <div>
-                                <div class="task-box-line"></div>
+                                <div class="task-box-line">
+                                    <div><input type="checkbox"></div>
+                                    <div><span>Some text</span></div>
+                                </div>
                             </div>
+                            <div>
+                                <div class="task-box-line">
+                                    <div><input type="checkbox"></div>
+                                    <div><span>Some text</span></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="task-box-line">
+                                    <div><input type="checkbox"></div>
+                                    <div><span>Some text</span></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="task-box-line">
+                                    <div><input type="checkbox"></div>
+                                    <div><span>Some text</span></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="task-box-line">
+                                    <div><input type="checkbox"></div>
+                                    <div><span>Some text</span></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="task-box-line">
+                                    <div><input type="checkbox"></div>
+                                    <div><span>Some text</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="add-task-panel">
+                            <div id="task_input">
+                                <div>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <div>
+                                        <img src="style/images/next-btn.png" alt="next">
+                                        <p></p>
+                                        <img src="style/images/previous.png" alt="prev">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="task-buttons">
+                                <div>
+                                    <button class="task-btn-red task-btn">Add task</button>
+                                    <button id="hide_add_task_panel" class="task-btn-cancel task-btn">Cancel</button>
+                                </div>
+                                <div>
+                                    <img src="style/images/alarm-clock.png" alt="alarm-clock">
+                                    <img src="style/images/flag.png" alt="flag">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="task-add">
+                            <div><button id="show_add_task_panel" class="task-btn-add task-btn">Add task</button> </div>
+                            <div><img src="style/images/repeat.png"></div>
                         </div>
                     </div>
                 </div>

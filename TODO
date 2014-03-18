@@ -1,10 +1,12 @@
 ## Have been implemented yet ##
 -filled center part
+-make calendar-layout
+-make task-layout
+-added jQuery script to show/hide "Add task"-panel
+-added jQuery script to show/hide mail,calendar and task layouts
 ----
 ## TODO ##
 -fix left-sidebar
 -remake right-sidebar to custom
 -fix header
 -add datePicker to right-sidebar
--make calendar-layout
--make task-layout
