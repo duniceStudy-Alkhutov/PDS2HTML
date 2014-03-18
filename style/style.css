@@ -12,6 +12,12 @@ div .header{
     min-width: 1320px;
     background: #212121;
 }
+.header div {
+    float: right;
+    margin-right: 15px;
+    display: block;
+    height: 42px;
+}
 .header img{
     margin: 15px;
     height: 20px;
@@ -56,6 +62,9 @@ div .header{
 .margin-all{
 
 }
+#user {
+    margin-top: 6px;
+}
 #user img{
     margin: 6px;
     height: 25px;
@@ -66,7 +75,8 @@ div .header{
     /*vertical-align: top;*/
     /*margin: 2px;*/
     /*display: table-cell;*/
-    vertical-align: top;
+    /*vertical-align: top;*/
+    padding-bottom: 15px;
     font-family: 'Open Sans',sans-serif;
     font-size: 15px;
     text-align: center;
