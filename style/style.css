@@ -102,7 +102,6 @@ div .header{
 }
 #navigation_left_panel ul li {
     margin-top:-32px;
-
     -moz-transition:  0.4s linear 0.4s;
     -ms-transition: 0.4s linear 0.4s;
     -o-transition: 0.4s linear 0.4s;
@@ -672,22 +671,50 @@ label.css-label {
     float: right;
     margin-right: 2px;
 }
+.td_100_width{
+    width: 100%;
+}
+.td_85_width{
+    width: 85%;
+}
+#select_list{
+    width: 100px;
+    border: 1px solid #3d3d3d;
+    background: #fdfdfd
+}
 .blind_text{
     color: #afafaf;
 }
 .white_text{
     color: white;
 }
-
+.datepiker{
+    height: 25px;
+    background: url("images/calendar-custom.png") no-repeat right transparent;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+}
+#3in1:nth-child(1){
+    width: 100%;
+}
+#3in1:nth-child(3){
+    width: 100%;
+}
+.datepiker-location{
+    height: 25px;
+    overflow: hidden;
+    border: 1px solid #eeeeee ;
+    background: url("images/google_maps.png") no-repeat right transparent;
+}
 /***************************************/
 .styled-select{
-    overflow: hidden;
-    background: url("images/calendar-custom.png") no-repeat right transparent;
-    width: 250px;
+    overflow: hidden !important;
+    background: transparent;
     padding-left: 5px;
     font-size: 14px;
     border: 1px solid #bcbdc1;
     height: 25px;
+    overflow: hidden;
 }
 .styled-select-date{
     overflow: hidden;

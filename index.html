@@ -2,7 +2,10 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="stylesheet" type="text/css" href="js/jquery-ui.css">
         <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-1.9.1.js"></script>
+        <script src="js/jquery-ui.js"></script>
         <script>
             $(document).ready(function(){
                 $("#hide_add_task_panel").click(function(){
@@ -26,6 +29,12 @@
                     $("#calendar-layer").hide();
                     $("#tasks-layer").show();
                 });
+                $(function(){
+                    $("#datepiker_stop").datepicker();
+                });
+                $(function(){
+                    $("#datepiker_start").datepicker();
+                })
             });
         </script>
         <title>PSD to HTML</title>
@@ -517,11 +526,11 @@
                     <col width="310">
                     <tr>
                         <td class="td-left">Title</label></td>
-                        <td><input type="text" placeholder=":)"></td>
+                        <td><input class="td_100_width" type="text" placeholder=":)"></td>
                     </tr>
                     <tr>
                         <td class="td-left"><label>List/Agenda</label></td>
-                        <td><select style="width: 100px; border: 1px solid #3d3d3d; background: #fdfdfd">
+                        <td><select id="select_list">
                                 <option selected value="0">Best moments</option>
                                 <option value="1">Option 1</option>
                                 <option value="2">Option 2</option>
@@ -533,7 +542,7 @@
                     </tr>
                     <tr>
                         <td class="td-left"><label>Assign to</label></td>
-                        <td><select class="styled-select">
+                        <td><select class="styled-select td_100_width">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -541,27 +550,40 @@
                     </tr>
                     <tr>
                         <td class="td-left"><label>Priority</label></td>
-                        <td><input type="button" placeholder="Urgent"><label>Status</label><input type="button" placeholder="Pending"></td>
+                        <td class="td_100_width" id="3in1">
+                            <select class="styled-select" id="urgent-select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                            <label for="urgent-select">Status</label>
+                            <select class="styled-select" id="pending-select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                            <label for="pending-select">Pending</label>
+                         </td>
                     </tr>
                     <tr>
-                        <td class="td-left"><label>Start</label></td>
-                        <td><input class="styled-select-date" type="date"></td>
+                        <td class="td-left"><label for="datepiker_start">Start</label></td>
+                        <td><input class="datepiker td_85_width" type="text" id="datepiker_start" ></td>
                     </tr>
                     <tr>
-                        <td class="td-left"><label>Stop</label></td>
-                        <td><input type="date"></td>
+                        <td class="td-left"><label for="datepiker_stop">Stop</label></td>
+                        <td><input class="datepiker td_85_width" type="text" id="datepiker_stop"></td>
                     </tr>
                     <tr>
-                        <td class="td-left"><label>Reminder</label></td>
-                        <td><input type="datetime-local" placeholder=""></td>
+                        <td class="td-left"><label for="datepiker_remainder">Reminder</label></td>
+                        <td><input type="text" placeholder="" id="datepiker_remainder" class="td_85_width datepiker"></td>
                     </tr>
                     <tr>
-                        <td class="td-left"><label>Location</label></td>
-                        <td><input type="text"></td>
+                        <td class="td-left"><label for="datepiker-location">Location</label></td>
+                        <td><input type="text" id="datepiker-location" class="td_100_width datepiker-location"></td>
                     </tr>
                     <tr>
-                        <td class="td-left"><label>Estimate</label></td>
-                        <td><input type="time" value="12:01"></td>
+                        <td class="td-left"><label for="estimate">Estimate</label></td>
+                        <td><input class="td_100_width" type="time" value="12:01" id="estimate"></td>
                     </tr>
                     <tr>
                         <td class="td-left"><label>Attach</label></td>
