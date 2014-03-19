@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ba8181a-ccf1-47f5-9408-c170fd4c6f58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/style.css" afterPath="$PROJECT_DIR$/style/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -39,7 +38,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="279" column="26" selection-start="5688" selection-end="5688" vertical-scroll-proportion="0.45454547" vertical-offset="4702" max-vertical-offset="16470">
+            <state line="298" column="0" selection-start="6096" selection-end="6096" vertical-scroll-proportion="0.88920456" vertical-offset="4738" max-vertical-offset="16416">
               <folding />
             </state>
           </provider>
@@ -345,7 +344,11 @@
       <created>1395226205848</created>
       <updated>1395226205848</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Changed left-sidebar">
+      <created>1395236477894</created>
+      <updated>1395236477894</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -397,7 +400,8 @@
     <MESSAGE value="Added some features, not bugs :) &#10;" />
     <MESSAGE value="Edited right panel" />
     <MESSAGE value="Some editions and fixes.&#10;This commit was added before global remaking left-sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some editions and fixes.&#10;This commit was added before global remaking left-sidebar" />
+    <MESSAGE value="Changed left-sidebar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed left-sidebar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -597,7 +601,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="279" column="26" selection-start="5688" selection-end="5688" vertical-scroll-proportion="0.45454547" vertical-offset="4702" max-vertical-offset="16470">
+        <state line="298" column="0" selection-start="6096" selection-end="6096" vertical-scroll-proportion="0.88920456" vertical-offset="4738" max-vertical-offset="16416">
           <folding />
         </state>
       </provider>
