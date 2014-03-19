@@ -38,6 +38,9 @@ div .header{
 #container>div{
     display: table-cell;
 }
+#container>div:nth-child(1){
+    width: 250px;
+}
 #container>div:nth-child(2){
     width: 100%;
     min-width: 645px;
@@ -204,7 +207,130 @@ div .header{
 
 
 /****************************************************************/
+#accordian {
+    background: #3d3d3d;
+    width: 270px;
+    margin: 100px auto 0 auto;
+    color: white;
+    /*Some cool shadow and glow effect*/
 
+}
+#accordian ul{
+    width: 270px;
+}
+/*heading styles*/
+#accordian h3 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 50px;
+    padding-left: 10px;
+    cursor: pointer;
+    /*fallback for browsers not supporting gradients*/
+    background: #3d3d3d;
+    border-top: 2px solid #5c5c5c;
+    /* background: linear-gradient(#003040, #002535); */
+}
+#search-field2{
+    padding-bottom: 25px;
+}
+#accordian ul li:first-child h3{
+    border-top: none;
+}
+#accordian ul li:nth-child(3) h3{
+    border-top: none;
+}
+#accordian ul li:nth-child(3) h3>span{
+    background: url("images/clock_small.png") no-repeat 5px 0px;
+}
+#accordian ul li:nth-child(5) h3>span{
+    background: url("images/inbox_small.png") no-repeat 5px -2px;
+}
+#accordian ul li:nth-child(4) h3>span{
+    background: url("images/calendar_small.png") no-repeat 5px -2px;
+}
+#accordian ul li:nth-child(6) h3>span{
+    background: url("images/tasks_small.png") no-repeat 5px -2px;
+}
+/*.tasks{*/
+    /*background: url("images/tasks_small.png");*/
+/*}*/
+/*heading hover effect*/
+#accordian li h3:hover {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+    background: #303030;
+}
+/*iconfont styles*/
+
+#accordian h3 span {
+    font-size: 16px;
+    margin-right: 10px;
+    padding-left: 30px;
+}
+/*list items*/
+#accordian li {
+    list-style-type: none;
+}
+/*links*/
+#accordian ul ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 27px;
+    display: block;
+    margin: 10px 0 10px 28px;
+    padding: 0 20px;
+    /*transition for smooth hover animation*/
+    transition: all 0.15s;
+}
+/*hover effect on links*/
+#accordian ul ul li a:hover {
+    background: #303030;/* border-left: 5px solid lightgreen; */
+}
+/*Lets hide the non active LIs by default*/
+#accordian ul ul {
+    display: none;
+}
+/*#accordian ul ul li a{*/
+    /*margin-left: 30px;*/
+/*}*/
+#accordian li.active ul {
+    display: block;
+}
+#li_inbox{
+    background: url("images/inbox_small.png");
+}
+
+/****************************************************************/
+.search-box2{
+    margin: 0 20px 2px 20px;
+    border-bottom: 2px solid #5c5c5c;
+}
+#search-field>input{
+    outline: none;
+}
+
+.search-box2 form>input{
+    border: none;
+    background: #3d3d3d;
+    color: #ffffff;
+    font-weight: normal;
+}
+.search-box2 form>input:focus{
+    outline: none;
+    border: none;
+}
+#search-form .submit{
+    background: url(images/search.png) no-repeat ;
+    background-size: 15px 15px;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+}
+#menu-item{
+    padding: 20px;
+    width: 30px;
+    float: right;
+}
 #menu_arrow {
     height: 10px;
     width: 10px;
@@ -245,27 +371,7 @@ div .header{
     outline: none !important;
     border: none !important;
 }
-#search-field>input{
-    outline: none;
-}
-.panel-search .input-box input{
-    border: none;
-    background: #3d3d3d;
-    color: #ffffff;
-    font-weight: normal;
-}
-.panel-search .input-box .submit{
-    background: url(images/search.png) no-repeat ;
-    background-size: 15px 15px;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-}
-#menu-item{
-    padding: 20px;
-    width: 30px;
-    float: right;
-}
+
 
 .content h1 {
     margin: 15px;

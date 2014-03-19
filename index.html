@@ -34,7 +34,16 @@
                 });
                 $(function(){
                     $("#datepiker_start").datepicker();
-                })
+                });
+                $("#accordian h3").click(function(){
+                    //slide up all the link lists
+                    $("#accordian ul ul").slideUp();
+                    //slide down the link list below the h3 clicked - only if its closed
+                    if(!$(this).next().is(":visible"))
+                    {
+                        $(this).next().slideDown();
+                    }
+                });
             });
         </script>
         <title>PSD to HTML</title>
@@ -57,37 +66,42 @@
             </div>
         </div>
         <div id="container">
-            <div class="panel_left" >
-                <ul id="navigation_left_panel">
+            <div id="accordian">
+                <ul>
                     <li >
                         <img id="menu-item" src="style/images/menu.png" alt="menu">
                     </li>
-                    <li id="li-search">
-                        <div class="panel-search">
-                            <div class="input-box" >
-                                <form id="search-field" tabindex="1" >
-                                    <input class="search-input" type="search" placeholder="Search...">
-                                    <input type="button" class="submit" value=" ">
-                                </form>
-                            </div>
+                    <li id="search-field2">
+                        <div class="search-box2">
+                            <form id="search-form" >
+                                <input class="search-input" type="search" placeholder="Search...">
+                                <input type="button" class="submit" value=" ">
+                            </form>
                         </div>
                     </li>
-                    <li><a href="#"><img src="style/images/clock.png" />Today</a></li>
-                    <li><a href="#" id="show_inbox" class="sub" tabindex="1"><img src="style/images/inbox.png" />Inbox/Outbox</a>
+                    <li>
+                        <h3><span class="today" id="li_today"></span>Today</h3>
+                    </li>
+                    <!-- we will keep this LI open by default -->
+                    <li id="li_inbox">
+                        <!--<img src="style/images/clock_small.png" alt="Today">-->
+                        <h3><span class="mail"></span>Inbox/Outbox</h3>
                         <ul>
                             <li><a href="#">Inbox</a></li>
                             <li><a href="#">Outbox</a></li>
-                            <li><a href="#">Somebox</a></li>
+                            <li><a href="#">Trash</a></li>
+                            <li><a href="#">Spam</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" id="show_calendar" class="sub" tabindex="1"><img src="style/images/calendar.png" />Calendar</a>
+                    <li>
+                        <h3><span class="calendar"></span>Calendar</h3>
                         <ul>
-                            <li><a href="#">Calen</a></li>
-                            <li><a href="#">daR</a></li>
-                            <li><a href="#">asd</a> </li>
+                            <li><a href="#">Current Month</a></li>
+                            <li><a href="#">Current Week</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" id="show_tasks" class="sub" tabindex="1"><img src="style/images/tasks.png" />Tasks</a>
+                    <li>
+                        <h3><span class="tasks"></span>Tasks</h3>
                         <ul>
                             <li><a href="#">Best Moments</a></li>
                             <li><a href="#">Another Task List</a></li>
@@ -95,7 +109,45 @@
                         </ul>
                     </li>
                 </ul>
-            </div>
+            </div><!--<div class="panel_left" >-->
+                <!--<ul id="navigation_left_panel">-->
+                    <!--<li >-->
+                        <!--<img id="menu-item" src="style/images/menu.png" alt="menu">-->
+                    <!--</li>-->
+                    <!--<li id="li-search">-->
+                        <!--<div class="panel-search">-->
+                            <!--<div class="input-box" >-->
+                                <!--<form id="search-field" tabindex="1" >-->
+                                    <!--<input class="search-input" type="search" placeholder="Search...">-->
+                                    <!--<input type="button" class="submit" value=" ">-->
+                                <!--</form>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li><a href="#"><img src="style/images/clock.png" />Today</a></li>-->
+                    <!--<li><a href="#" id="show_inbox" class="sub" tabindex="1"><img src="style/images/inbox.png" />Inbox/Outbox</a>-->
+                        <!--<ul>-->
+                            <!--<li><a href="#">Inbox</a></li>-->
+                            <!--<li><a href="#">Outbox</a></li>-->
+                            <!--<li><a href="#">Somebox</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li><a href="#" id="show_calendar" class="sub" tabindex="1"><img src="style/images/calendar.png" />Calendar</a>-->
+                        <!--<ul>-->
+                            <!--<li><a href="#">Calen</a></li>-->
+                            <!--<li><a href="#">daR</a></li>-->
+                            <!--<li><a href="#">asd</a> </li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li><a href="#" id="show_tasks" class="sub" tabindex="1"><img src="style/images/tasks.png" />Tasks</a>-->
+                        <!--<ul>-->
+                            <!--<li><a href="#">Best Moments</a></li>-->
+                            <!--<li><a href="#">Another Task List</a></li>-->
+                            <!--<li><a href="#">Add New +</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
             <div class="content" >
                 <div id="mail-layer">
                     <h1>Input/Output</h1>
