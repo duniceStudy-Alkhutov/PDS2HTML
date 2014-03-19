@@ -65,10 +65,10 @@
                     <li id="li-search">
                         <div class="panel-search">
                             <div class="input-box" >
-                                <a href="#" id="search-field" tabindex="1" >
+                                <form id="search-field" tabindex="1" >
                                     <input class="search-input" type="search" placeholder="Search...">
                                     <input type="button" class="submit" value=" ">
-                                </a>
+                                </form>
                             </div>
                         </div>
                     </li>
@@ -530,7 +530,7 @@
                     </tr>
                     <tr>
                         <td class="td-left"><label>List/Agenda</label></td>
-                        <td><select id="select_list">
+                        <td><select class="gradient-select" id="select_list">
                                 <option selected value="0">Best moments</option>
                                 <option value="1">Option 1</option>
                                 <option value="2">Option 2</option>
@@ -542,22 +542,23 @@
                     </tr>
                     <tr>
                         <td class="td-left"><label>Assign to</label></td>
-                        <td><select class="styled-select td_100_width">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select></td>
-                    </tr>
-                    <tr>
-                        <td class="td-left"><label>Priority</label></td>
-                        <td class="td_100_width" id="3in1">
-                            <select class="styled-select" id="urgent-select">
+                        <td><select class="styled-select td_100_width " id="assign-select">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
                             </select>
-                            <label for="urgent-select">Status</label>
-                            <select class="styled-select" id="pending-select">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-left"><label>Priority</label></td>
+                        <td class="td_100_width" id="3in1">
+                            <select class="styled-select gradient-select select_60px" id="urgent-select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                            <label for="urgent-select" id="label_status">Status</label>
+                            <select class="styled-select gradient-select select_60px" id="pending-select">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -583,14 +584,18 @@
                     </tr>
                     <tr>
                         <td class="td-left"><label for="estimate">Estimate</label></td>
-                        <td><input class="td_100_width" type="time" value="12:01" id="estimate"></td>
+                        <td><input class="" type="time" value="12:01" id="estimate">
+                            <label for="spent" id="label_spent">Spent</label>
+                            <input class="" type="time" value="01:20" id="spent">
+                        </td>
                     </tr>
                     <tr>
                         <td class="td-left"><label>Attach</label></td>
                         <td><div class="new-attach">
-                            <span>Select file</span>
-                            <input type="file" name="file" id="file" size="1" class="attach-custom">
-                        </div> </td>
+                                <span>Select file</span>
+                                <input type="file" name="file" id="file" size="1" class="attach-custom">
+                            </div>
+                        </td>
                     </tr>
 
                 </table>
