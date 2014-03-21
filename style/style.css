@@ -946,3 +946,57 @@ label.css-label {
 #tasks{
     margin: 0 10px;
 }
+#features-area{
+
+}
+#todo{
+    border: 1px solid #969696;
+}
+#todo:nth-child(1){
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+#todo #list-box>div{
+    /*padding: 6px 8px;*/
+    background: #ffffA0;
+    border-bottom: 1px solid #d1e1eb;
+}
+#list-box div>div{
+    display: inline-block;
+    padding: 4px;
+}
+/*#list-box div:nth-child(2){*/
+    /*border-right: 1px solid #000000;*/
+/*}*/
+/*#list-box div:nth-child(1){*/
+    /*border-left: 1px solid #000000;*/
+/*}*/
+#list-box input[type=checkbox]:after{
+    margin: 15px;
+}
+#add2list-box{
+    padding: 6px 0;
+    background: #ffffA0;
+}
+#add2list-box img{
+    height: 12px;
+    margin-left: 8px;
+}
+#todo #list-box label, #todo #add2list-box input{
+    padding-left: 10px;
+    border: none;
+    background: #ffffA0;
+    font-size: 14px;
+}
+#list-box label:before{
+}
+.trick{
+    height: 31px;
+    width: 3px;
+    border: none;
+}
+#todo #list-box input:focus, #add2list-box input:focus{
+    outline: none;
+    border: none;
+}

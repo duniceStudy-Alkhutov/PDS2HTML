@@ -39,4 +39,13 @@ $(document).ready(function(){
             $(this).next().slideDown();
         }
     });
+    $('#add_form').submit(function () {
+        if ($('#add-input').val() !== '') {
+            var input_value = $('#add-input').val();
+            $('#list-box').append('<div><input type="checkbox"><label>' + input_value + '</label></div>');
+            //$('ul').append('<li>' + input_value '<a href="">x</a></li>');
+        };
+        $('#add-input').val('');
+        return false;
+    });
 });

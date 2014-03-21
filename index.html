@@ -9,7 +9,7 @@
         <script src="assets/js/bower_components/backbone/backbone.js"></script>
         <script src="js/jquery-ui.js"></script>
         <script src="js/app.js"></script>
-        <script src="js/menu.js"></script>
+        <script src="js/my.js"></script>
         <title>PSD to HTML</title>
     </head>
     <body>
@@ -499,84 +499,109 @@
                 </div>
             </div>
             <div class="panel_right">
-                <table id="control" >
-                    <col id="control-col1">
-                    <col id="control-col2">
-                    <tr>
-                        <td class="td-left"><label>Title</label></td>
-                        <td><input class="td_100_width" type="text" placeholder=":)"></td>
-                    </tr>
-                    <tr>
-                        <td class="td-left"><label>List/Agenda</label></td>
-                        <td><select class="gradient-select" id="select_list">
+                <div>
+                    <table id="control" >
+                        <col id="control-col1">
+                        <col id="control-col2">
+                        <tr>
+                            <td class="td-left"><label>Title</label></td>
+                            <td><input class="td_100_width" type="text" placeholder=":)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-left"><label>List/Agenda</label></td>
+                            <td><select class="gradient-select" id="select_list">
                                 <option selected value="0">Best moments</option>
                                 <option value="1">Option 1</option>
                                 <option value="2">Option 2</option>
                                 <option value="3">Option 3</option>
                             </select>
-                            <input type="radio" checked>
-                            <label>Tasks</label>
-                            <input type="radio"><label>Meeting</label></td>
-                    </tr>
-                    <tr>
-                        <td class="td-left"><label>Assign to</label></td>
-                        <td><select class="styled-select td_100_width " id="assign-select">
+                                <input type="radio" checked>
+                                <label>Tasks</label>
+                                <input type="radio"><label>Meeting</label></td>
+                        </tr>
+                        <tr>
+                            <td class="td-left"><label>Assign to</label></td>
+                            <td><select class="styled-select td_100_width " id="assign-select">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
                             </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="td-left"><label>Priority</label></td>
-                        <td class="td_100_width" id="3in1">
-                            <select class="styled-select gradient-select select_60px" id="urgent-select">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                            <label for="urgent-select" id="label_status">Status</label>
-                            <select class="styled-select gradient-select select_60px" id="pending-select">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                            <label for="pending-select">Pending</label>
-                         </td>
-                    </tr>
-                    <tr>
-                        <td class="td-left"><label for="datepiker_start">Start</label></td>
-                        <td><input class="datepiker td_85_width" type="text" id="datepiker_start" ></td>
-                    </tr>
-                    <tr>
-                        <td class="td-left"><label for="datepiker_stop">Stop</label></td>
-                        <td><input class="datepiker td_85_width" type="text" id="datepiker_stop"></td>
-                    </tr>
-                    <tr>
-                        <td class="td-left"><label for="datepiker_remainder">Reminder</label></td>
-                        <td><input type="text" placeholder="" id="datepiker_remainder" class="td_85_width datepiker"></td>
-                    </tr>
-                    <tr>
-                        <td class="td-left"><label for="datepiker-location">Location</label></td>
-                        <td><input type="text" id="datepiker-location" class="td_100_width datepiker-location"></td>
-                    </tr>
-                    <tr>
-                        <td class="td-left"><label for="estimate">Estimate</label></td>
-                        <td><input class="" type="time" value="12:01" id="estimate">
-                            <label for="spent" id="label_spent">Spent</label>
-                            <input class="" type="time" value="01:20" id="spent">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="td-left"><label>Attach</label></td>
-                        <td><div class="new-attach">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-left"><label>Priority</label></td>
+                            <td class="td_100_width" id="3in1">
+                                <select class="styled-select gradient-select select_60px" id="urgent-select">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <label for="urgent-select" id="label_status">Status</label>
+                                <select class="styled-select gradient-select select_60px" id="pending-select">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <label for="pending-select">Pending</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-left"><label for="datepiker_start">Start</label></td>
+                            <td><input class="datepiker td_85_width" type="text" id="datepiker_start" ></td>
+                        </tr>
+                        <tr>
+                            <td class="td-left"><label for="datepiker_stop">Stop</label></td>
+                            <td><input class="datepiker td_85_width" type="text" id="datepiker_stop"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-left"><label for="datepiker_remainder">Reminder</label></td>
+                            <td><input type="text" placeholder="" id="datepiker_remainder" class="td_85_width datepiker"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-left"><label for="datepiker-location">Location</label></td>
+                            <td><input type="text" id="datepiker-location" class="td_100_width datepiker-location"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-left"><label for="estimate">Estimate</label></td>
+                            <td><input class="" type="time" value="12:01" id="estimate">
+                                <label for="spent" id="label_spent">Spent</label>
+                                <input class="" type="time" value="01:20" id="spent">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-left"><label>Attach</label></td>
+                            <td><div class="new-attach">
                                 <span>Select file</span>
                                 <input type="file" name="file" id="file" class="attach-custom">
                             </div>
-                        </td>
-                    </tr>
+                            </td>
+                        </tr>
 
-                </table>
+                    </table>
+                </div>
+                <div id="features-area">
+                    <div id="todo">
+                        <div id="list-box">
+                            <div>
+                                <div><input type="checkbox"></div>
+                                <div><label>task 1</label></div>
+                            </div>
+                            <div>
+                                <div><input type="checkbox"></div>
+                                <div><label>task 1</label></div>
+                            </div>
+                        </div>
+                        <div id="add2list-box">
+                            <form id="add_form">
+                                <img src="style/images/add-task.png" alt="add-task">
+                                <input type="text" id="add-input" placeholder="I should to...">
+                            </form>
+                        </div>
+
+                    </div>
+                    <div id="notepad"></div>
+                    <div id="chat"></div>
+                </div>
                 <!--<label class="control-label-md1">Title</label><input class="control-label-md2" type="text" size="20" placeholder="Search">-->
                 <!--<br>-->
                 <!--<label class="control-label-md1">Title</label><div class="control-label-md2">-->
