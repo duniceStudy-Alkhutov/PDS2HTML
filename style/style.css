@@ -240,20 +240,18 @@ div .header{
     border-top: none;
 }
 #accordian ul li:nth-child(3) h3>span{
-    background: url("images/clock_small.png") no-repeat 5px 0px;
+    background: url("images/clock_small.png") no-repeat 10px 0px;
 }
 #accordian ul li:nth-child(5) h3>span{
-    background: url("images/inbox_small.png") no-repeat 5px -2px;
+    background: url("images/inbox_small.png") no-repeat 10px -2px;
 }
 #accordian ul li:nth-child(4) h3>span{
-    background: url("images/calendar_small.png") no-repeat 5px -2px;
+    background: url("images/calendar_small.png") no-repeat 10px -2px;
 }
 #accordian ul li:nth-child(6) h3>span{
-    background: url("images/tasks_small.png") no-repeat 5px -2px;
+    background: url("images/tasks_small.png") no-repeat 10px -2px;
 }
-/*.tasks{*/
-    /*background: url("images/tasks_small.png");*/
-/*}*/
+
 /*heading hover effect*/
 #accordian li h3:hover {
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
@@ -528,11 +526,11 @@ label.css-label {
 
 /***************************************/
 #mail-layer{
-    display: none;
+    /*display: none;*/
 }
 /***************************************/
 #tasks-layer{
-    /*display: none;*/
+    display: none;
 }
 .task-box{
     margin: 10px 20px 0 20px;
@@ -689,7 +687,7 @@ label.css-label {
 }
 /***************************************/
 #calendar-layer{
-    display: none;
+    /*display: none;*/
 }
 .calendar-box{
     margin: 0 20px 10px 20px;

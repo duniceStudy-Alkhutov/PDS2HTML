@@ -7,6 +7,42 @@
         <script src="js/jquery-1.9.1.js"></script>
         <script src="js/jquery-ui.js"></script>
         <script>
+//            $(document).ready(function(){
+//
+//                $('li.navigate').click(function() {
+//
+//
+//                    var id = $(this).attr("id");
+//                    $('.some-class').each(function() {
+//
+//                        $(this).toggleClass('visible', id == id_compare);
+//                    })
+//
+//                    switch () {
+//                        case "show_tasks":
+//                            $("#mail-layer").hide();
+//                            $("#calendar-layer").hide();
+//                            $("#tasks-layer").show();
+//                            break;
+//                        case "show_inbox":
+//                            $("#mail-layer").show();
+//                            $("#calendar-layer").hide();
+//                            $("#tasks-layer").hide();
+//                    }
+//                })
+//
+//
+//                switch ($("#accordian ul li").attr("id")) {
+//                    case "show_tasks":
+//                        $("#mail-layer").hide();
+//                        $("#calendar-layer").hide();
+//                        $("#tasks-layer").show();
+//                        break;
+//                    case "show_inbox":
+//                        $("#mail-layer").show();
+//                        $("#calendar-layer").hide();
+//                        $("#tasks-layer").hide();
+//                }
             $(document).ready(function(){
                 $("#hide_add_task_panel").click(function(){
                     $("#add-task-panel").hide();
@@ -83,9 +119,9 @@
                         <h3><span class="today" id="li_today"></span>Today</h3>
                     </li>
                     <!-- we will keep this LI open by default -->
-                    <li id="li_inbox">
+                    <li id="show_inbox">
                         <!--<img src="style/images/clock_small.png" alt="Today">-->
-                        <h3><span class="mail"></span>Inbox/Outbox</h3>
+                        <h3 ><span class="mail"></span>Inbox/Outbox</h3>
                         <ul>
                             <li><a href="#">Inbox</a></li>
                             <li><a href="#">Outbox</a></li>
@@ -93,14 +129,14 @@
                             <li><a href="#">Spam</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li id="show_calendar">
                         <h3><span class="calendar"></span>Calendar</h3>
                         <ul>
                             <li><a href="#">Current Month</a></li>
                             <li><a href="#">Current Week</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li id="show_tasks">
                         <h3><span class="tasks"></span>Tasks</h3>
                         <ul>
                             <li><a href="#">Best Moments</a></li>
