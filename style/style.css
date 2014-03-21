@@ -3,7 +3,9 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
-
+body{
+    height: 100%;
+}
 .wrapper{
     background: white;
 }
@@ -40,6 +42,7 @@ div .header{
 }
 #container>div:nth-child(1){
     width: 250px;
+    height: 100%;
 }
 #container>div:nth-child(2){
     width: 100%;
@@ -279,7 +282,7 @@ div .header{
     margin: 8px 0;
     padding: 0 0 0 50px;
     /*transition for smooth hover animation*/
-    transition: all 0.15s;
+    /*transition: all 0.15s;*/
 }
 /*hover effect on links*/
 #accordian ul ul li a:hover {
@@ -447,7 +450,7 @@ li.active h3:after{
     padding: 3px;
 }
 .mail-box-header-left-box{
-    padding: 0px;
+    padding: 0;
     float: left;
 }
 .mail-box-header-right-box{
@@ -526,8 +529,7 @@ input[type=checkbox].css-checkbox + label.css-label {
     height:15px;
     display:inline-block;
     line-height:15px;
-    background-repeat:no-repeat;
-    background-position: 0 0;
+    background:no-repeat 0 0;
     font-size:15px;
     vertical-align:middle;
     cursor:pointer;
@@ -639,7 +641,7 @@ label.css-label {
 #task-buttons>div:nth-child(2){
     float: right;
     vertical-align: middle;
-    margin-right: 0px;
+    margin-right: 0;
 }
 #task-buttons>div:nth-child(2)>img{
     height: 15px;
@@ -743,6 +745,12 @@ label.css-label {
 .calendar-table{
     width: 100%;
 }
+.calendar-table table{
+    background: #dddddd;
+    border-spacing: 1px;
+    border-collapse: separate;
+    width: 100%;
+}
 .calendar-table table tr{
     height: 60px;
     background: #fafafa;
@@ -755,6 +763,7 @@ label.css-label {
 .calendar-table table tr td>div{
     margin: 2px 2px;
     padding: 1px;
+    color: #ffffff;
 }
 .calendar-table table tr td div span{
     color: white;
@@ -799,7 +808,8 @@ label.css-label {
 }
 .table_text{
     float: right;
-    margin-right: 2px;
+    margin-right: 3px;
+    margin-top: 3px;
 }
 .td_100_width{
     width: 100%;
@@ -894,6 +904,16 @@ label.css-label {
 .control-label-md2{
     width: 310px;
     padding-left: 5px;
+}
+#control{
+    border-spacing: 15px;
+    border-collapse: separate;;
+}
+#control-col1{
+    width: 100px;
+}
+#control-col2{
+    width: 310px;
 }
 .new-attach{
     text-align: center;

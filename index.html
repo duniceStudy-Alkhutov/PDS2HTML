@@ -9,83 +9,7 @@
         <script src="assets/js/bower_components/backbone/backbone.js"></script>
         <script src="js/jquery-ui.js"></script>
         <script src="js/app.js"></script>
-        <script>
-//            $(document).ready(function(){
-//
-//                $('li.navigate').click(function() {
-//
-//
-//                    var id = $(this).attr("id");
-//                    $('.some-class').each(function() {
-//
-//                        $(this).toggleClass('visible', id == id_compare);
-//                    })
-//
-//                    switch () {
-//                        case "show_tasks":
-//                            $("#mail-layer").hide();
-//                            $("#calendar-layer").hide();
-//                            $("#tasks-layer").show();
-//                            break;
-//                        case "show_inbox":
-//                            $("#mail-layer").show();
-//                            $("#calendar-layer").hide();
-//                            $("#tasks-layer").hide();
-//                    }
-//                })
-//
-//
-//                switch ($("#accordian ul li").attr("id")) {
-//                    case "show_tasks":
-//                        $("#mail-layer").hide();
-//                        $("#calendar-layer").hide();
-//                        $("#tasks-layer").show();
-//                        break;
-//                    case "show_inbox":
-//                        $("#mail-layer").show();
-//                        $("#calendar-layer").hide();
-//                        $("#tasks-layer").hide();
-//                }
-            $(document).ready(function(){
-                //
-//                $("#show_inbox").click(function(){
-//                    $("#mail-layer").show();
-//                    $("#calendar-layer").hide();
-//                    $("#tasks-layer").hide();
-//                });
-//                $("#show_calendar").click(function(){
-//                    $("#mail-layer").hide();
-//                    $("#calendar-layer").show();
-//                    $("#tasks-layer").hide();
-//                });
-//                $("#show_tasks").click(function(){
-//                    $("#mail-layer").hide();
-//                    $("#calendar-layer").hide();
-//                    $("#tasks-layer").show();
-//                });
-                $("#hide_add_task_panel").click(function(){
-                    $("#add-task-panel").hide();
-                });
-                $("#show_add_task_panel").click(function(){
-                    $("#add-task-panel").show();
-                });
-                $(function(){
-                    $("#datepiker_stop").datepicker();
-                });
-                $(function(){
-                    $("#datepiker_start").datepicker();
-                });
-                $("#accordian h3").click(function(){
-                    //slide up all the link lists
-                    $("#accordian ul ul").slideUp();
-                    //slide down the link list below the h3 clicked - only if its closed
-                    if(!$(this).next().is(":visible"))
-                    {
-                        $(this).next().slideDown();
-                    }
-                });
-            });
-        </script>
+        <script src="js/menu.js"></script>
         <title>PSD to HTML</title>
     </head>
     <body>
@@ -97,7 +21,7 @@
                     <img src="style/images/notify.jpg" alt="notify">
                     <img src="style/images/messages.jpg" alt="messages" >
                     <img src="style/images/korobki.jpg" alt="korobki" >
-                    <img id="img_bob" src="style/images/bob_nilson.jpg" >
+                    <img id="img_bob" src="style/images/bob_nilson.jpg" alt="bob" >
                 </div>
                 <div>
                     <span>Bob Nilson</span>
@@ -154,9 +78,9 @@
                 <div id="mail-layer" class="layers">
                     <h1>Input/Output</h1>
                     <div class="address-box">
-                        <img src="style/images/home.png">
+                        <img src="style/images/home.png" alt="home">
                         <span>Home</span>
-                        <img src="style/images/arrow-right.png">
+                        <img src="style/images/arrow-right.png" alt="">
                     </div>
                     <div class="type-box">
                         <div class="inbox-box">Inbox(3)</div>
@@ -177,8 +101,8 @@
                             <div>
                                 <div class="mail-box-header-right-box">
                                     <span id="right-span">1-30 of 789</span>
-                                    <a href="#"><img src="style/images/arrow-mail-left.png"></a>
-                                    <a href="#"><img src="style/images/arrow-mail-right.png"></a>
+                                    <a href="#"><img src="style/images/arrow-mail-left.png" alt=""></a>
+                                    <a href="#"><img src="style/images/arrow-mail-right.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -383,9 +307,9 @@
                 <div id="calendar-layer" class="layers">
                     <h1>Calendar</h1>
                     <div class="address-box">
-                        <img src="style/images/home.png">
+                        <img src="style/images/home.png" alt="">
                         <span>Home</span>
-                        <img src="style/images/arrow-right.png">
+                        <img src="style/images/arrow-right.png" alt="">
                     </div>
                     <div class="calendar-box">
                         <div class="calendar-toggle">
@@ -398,8 +322,8 @@
                             <br>
                         </div>
                         <div class="calendar-table">
-                            <table bgcolor="#dddddd" border=0 ellpadding=2 cellspacing=1 width="100%">
-                                <tr id="table-header" bgcolor="#3d3d3d">
+                            <table >
+                                <tr id="table-header" >
                                     <td>SUN</td>
                                     <td>MON</td>
                                     <td>TUE</td>
@@ -417,7 +341,7 @@
                                     <td>
                                         <span class="table_text">1</span>
                                         <br>
-                                        <div id="fri_1"><span class="white_text">All day<p>Event</span></div>
+                                        <div id="fri_1">All day<p>Event</div>
                                     </td>
                                     <td><span class="table_text ">2</span></td>
                                 </tr>
@@ -443,13 +367,13 @@
                                     <td>
                                         <span class="table_text ">15</span>
                                         <br>
-                                        <div id="fri_15_1"><span>10:30a<p>Meeting</span></div>
-                                        <div id="fri_15_2"><span>12p<p>Lunch</span></div>
+                                        <div id="fri_15_1">10:30a<p>Meeting</div>
+                                        <div id="fri_15_2">12p<p>Lunch</div>
                                     </td>
                                     <td>
                                         <span class="table_text ">16</span>
                                         <br>
-                                        <div id="sun_16"><span>7p<p>Birthday<p>Party</span></div>
+                                        <div id="sun_16">7p<p>Birthday<p>Party</div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -458,7 +382,7 @@
                                     <td>
                                         <span class="table_text ">19</span>
                                         <br>
-                                        <div id="tue_19"><span>4p<p>Repeating<p>Event</span></div>
+                                        <div id="tue_19">4p<p>Repeating<p>Event</div>
                                     </td>
                                     <td><span class="table_text ">20</span></td>
                                     <td><span class="table_text ">21</span></td>
@@ -496,9 +420,9 @@
                 <div id="tasks-layer" class="layers">
                     <h1>Tasks</h1>
                     <div class="address-box">
-                        <img src="style/images/home.png">
+                        <img src="style/images/home.png" alt="">
                         <span>Home</span>
-                        <img src="style/images/arrow-right.png">
+                        <img src="style/images/arrow-right.png" alt="">
                     </div>
                     <div class="task-box">
                         <div class="task-box-header">
@@ -569,17 +493,17 @@
                         </div>
                         <div id="task-add">
                             <div><button id="show_add_task_panel" class="task-btn-add task-btn">Add task</button> </div>
-                            <div><img src="style/images/repeat.png"></div>
+                            <div><img src="style/images/repeat.png" alt=""></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="panel_right">
-                <table cellspacing="15" id="control" >
-                    <col width="100">
-                    <col width="310">
+                <table id="control" >
+                    <col id="control-col1">
+                    <col id="control-col2">
                     <tr>
-                        <td class="td-left">Title</label></td>
+                        <td class="td-left"><label>Title</label></td>
                         <td><input class="td_100_width" type="text" placeholder=":)"></td>
                     </tr>
                     <tr>
@@ -647,7 +571,7 @@
                         <td class="td-left"><label>Attach</label></td>
                         <td><div class="new-attach">
                                 <span>Select file</span>
-                                <input type="file" name="file" id="file" size="1" class="attach-custom">
+                                <input type="file" name="file" id="file" class="attach-custom">
                             </div>
                         </td>
                     </tr>
