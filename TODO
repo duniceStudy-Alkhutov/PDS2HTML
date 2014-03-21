@@ -4,9 +4,12 @@
 -make task-layout
 -added jQuery script to show/hide "Add task"-panel
 -added jQuery script to show/hide mail,calendar and task layouts
+-fix left-sidebar
+-add datePicker to right-sidebar
+-backbonejs added(show/hide middle part and add %label% to url in omnibox
 ----
 ## TODO ##
--fix left-sidebar
+-added arrows to left-sidebar
 -remake right-sidebar to custom
 -fix header
--add datePicker to right-sidebar
+

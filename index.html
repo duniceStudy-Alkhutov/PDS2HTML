@@ -3,9 +3,12 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style/style.css">
         <link rel="stylesheet" type="text/css" href="js/jquery-ui.css">
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery-1.9.1.js"></script>
+        <script src="assets/js/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="assets/js/bower_components/underscore/underscore.js"></script>
+        <script src="assets/js/bower_components/json2/json2.js"></script>
+        <script src="assets/js/bower_components/backbone/backbone.js"></script>
         <script src="js/jquery-ui.js"></script>
+        <script src="js/app.js"></script>
         <script>
 //            $(document).ready(function(){
 //
@@ -44,26 +47,27 @@
 //                        $("#tasks-layer").hide();
 //                }
             $(document).ready(function(){
+                //
+//                $("#show_inbox").click(function(){
+//                    $("#mail-layer").show();
+//                    $("#calendar-layer").hide();
+//                    $("#tasks-layer").hide();
+//                });
+//                $("#show_calendar").click(function(){
+//                    $("#mail-layer").hide();
+//                    $("#calendar-layer").show();
+//                    $("#tasks-layer").hide();
+//                });
+//                $("#show_tasks").click(function(){
+//                    $("#mail-layer").hide();
+//                    $("#calendar-layer").hide();
+//                    $("#tasks-layer").show();
+//                });
                 $("#hide_add_task_panel").click(function(){
                     $("#add-task-panel").hide();
                 });
                 $("#show_add_task_panel").click(function(){
                     $("#add-task-panel").show();
-                });
-                $("#show_inbox").click(function(){
-                    $("#mail-layer").show();
-                    $("#calendar-layer").hide();
-                    $("#tasks-layer").hide();
-                });
-                $("#show_calendar").click(function(){
-                    $("#mail-layer").hide();
-                    $("#calendar-layer").show();
-                    $("#tasks-layer").hide();
-                });
-                $("#show_tasks").click(function(){
-                    $("#mail-layer").hide();
-                    $("#calendar-layer").hide();
-                    $("#tasks-layer").show();
                 });
                 $(function(){
                     $("#datepiker_stop").datepicker();
@@ -103,7 +107,7 @@
         </div>
         <div id="container">
             <div id="accordian">
-                <ul>
+                <ul class="panel-list">
                     <li >
                         <img id="menu-item" src="style/images/menu.png" alt="menu">
                     </li>
@@ -115,8 +119,8 @@
                             </form>
                         </div>
                     </li>
-                    <li>
-                        <h3><span class="today" id="li_today"></span>Today</h3>
+                    <li id="li_today">
+                        <h3><span class="today" ></span>Today</h3>
                     </li>
                     <!-- we will keep this LI open by default -->
                     <li id="show_inbox">
@@ -145,47 +149,9 @@
                         </ul>
                     </li>
                 </ul>
-            </div><!--<div class="panel_left" >-->
-                <!--<ul id="navigation_left_panel">-->
-                    <!--<li >-->
-                        <!--<img id="menu-item" src="style/images/menu.png" alt="menu">-->
-                    <!--</li>-->
-                    <!--<li id="li-search">-->
-                        <!--<div class="panel-search">-->
-                            <!--<div class="input-box" >-->
-                                <!--<form id="search-field" tabindex="1" >-->
-                                    <!--<input class="search-input" type="search" placeholder="Search...">-->
-                                    <!--<input type="button" class="submit" value=" ">-->
-                                <!--</form>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li><a href="#"><img src="style/images/clock.png" />Today</a></li>-->
-                    <!--<li><a href="#" id="show_inbox" class="sub" tabindex="1"><img src="style/images/inbox.png" />Inbox/Outbox</a>-->
-                        <!--<ul>-->
-                            <!--<li><a href="#">Inbox</a></li>-->
-                            <!--<li><a href="#">Outbox</a></li>-->
-                            <!--<li><a href="#">Somebox</a></li>-->
-                        <!--</ul>-->
-                    <!--</li>-->
-                    <!--<li><a href="#" id="show_calendar" class="sub" tabindex="1"><img src="style/images/calendar.png" />Calendar</a>-->
-                        <!--<ul>-->
-                            <!--<li><a href="#">Calen</a></li>-->
-                            <!--<li><a href="#">daR</a></li>-->
-                            <!--<li><a href="#">asd</a> </li>-->
-                        <!--</ul>-->
-                    <!--</li>-->
-                    <!--<li><a href="#" id="show_tasks" class="sub" tabindex="1"><img src="style/images/tasks.png" />Tasks</a>-->
-                        <!--<ul>-->
-                            <!--<li><a href="#">Best Moments</a></li>-->
-                            <!--<li><a href="#">Another Task List</a></li>-->
-                            <!--<li><a href="#">Add New +</a></li>-->
-                        <!--</ul>-->
-                    <!--</li>-->
-                <!--</ul>-->
-            <!--</div>-->
+            </div>
             <div class="content" >
-                <div id="mail-layer">
+                <div id="mail-layer" class="layers">
                     <h1>Input/Output</h1>
                     <div class="address-box">
                         <img src="style/images/home.png">
@@ -414,7 +380,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="calendar-layer">
+                <div id="calendar-layer" class="layers">
                     <h1>Calendar</h1>
                     <div class="address-box">
                         <img src="style/images/home.png">
@@ -527,7 +493,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="tasks-layer">
+                <div id="tasks-layer" class="layers">
                     <h1>Tasks</h1>
                     <div class="address-box">
                         <img src="style/images/home.png">

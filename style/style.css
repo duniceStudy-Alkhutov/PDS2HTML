@@ -242,10 +242,10 @@ div .header{
 #accordian ul li:nth-child(3) h3>span{
     background: url("images/clock_small.png") no-repeat 10px 0px;
 }
-#accordian ul li:nth-child(5) h3>span{
+#accordian ul li:nth-child(4) h3>span{
     background: url("images/inbox_small.png") no-repeat 10px -2px;
 }
-#accordian ul li:nth-child(4) h3>span{
+#accordian ul li:nth-child(5) h3>span{
     background: url("images/calendar_small.png") no-repeat 10px -2px;
 }
 #accordian ul li:nth-child(6) h3>span{
@@ -267,6 +267,7 @@ div .header{
 /*list items*/
 #accordian li {
     list-style-type: none;
+    position: relative;
 }
 /*links*/
 #accordian ul ul li a {
@@ -294,7 +295,29 @@ div .header{
 #accordian li.active ul {
     display: block;
 }
-
+li#show_inbox.active h3{
+    background: red;
+}
+li#show_calendar.active h3{
+    background: red;
+}
+li#show_tasks.active h3{
+    background: red;
+}
+li#li_today.active h3 {
+    background: red;
+}
+li.active h3:after{
+    position: absolute;
+    top: 12px;
+    right: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: solid 15px transparent;
+    border-bottom: solid 15px transparent;
+    border-right: solid 10px #ffffff;
+}
 /****************************************************************/
 .search-box2{
     margin: 0 20px 2px 20px;
@@ -526,7 +549,7 @@ label.css-label {
 
 /***************************************/
 #mail-layer{
-    /*display: none;*/
+    display: none;
 }
 /***************************************/
 #tasks-layer{
