@@ -582,25 +582,59 @@
                 <div id="features-area">
                     <div id="todo">
                         <div id="list-box">
-                            <div>
+                            <div class="todo-line">
                                 <div><input type="checkbox"></div>
                                 <div><label>task 1</label></div>
                             </div>
-                            <div>
+                            <div class="todo-line">
                                 <div><input type="checkbox"></div>
                                 <div><label>task 1</label></div>
                             </div>
                         </div>
                         <div id="add2list-box">
                             <form id="add_form">
-                                <img src="style/images/add-task.png" alt="add-task">
-                                <input type="text" id="add-input" placeholder="I should to...">
+                                <div><img src="style/images/add-task.png" alt="add-task"></div>
+                                <div><input type="text" id="add-input" placeholder="I should to..."></div>
                             </form>
                         </div>
 
                     </div>
-                    <div id="notepad"></div>
-                    <div id="chat"></div>
+                    <div id="notepad">
+                        <div contenteditable="true" id="notepad-content">
+                            You can write here!
+                        </div>
+                    </div>
+                    <div id="chat">
+                        <div class="iamauthor">
+                            <div class="chat-photo-left">
+                                <img src="style/images/bob-nilson-big.png" alt="bob">
+                            </div>
+                            <div>
+                                <div class="chat-text-left">
+                                    <span><span class="blue_span">Bob Nilson</span> at Jul 25, 2012 11:09</span>
+                                    <div><p>aaaaaaaaaaasssaa<p>
+                                        asdasdasddddddddddd<p>
+                                        asdasdasdasdasdasda<p>ddddddddddddddd
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interlocutor">
+                            <div>
+                                <div class="chat-text-right">
+                                    <span><span class="blue_span">Richard Doe</span> at Jul 25, 2012 11:10</span>
+                                    <div>
+                                        <p>aaaaaaaaaaasssaa<p>
+                                        asdasdasddddddddddd<p>
+                                        asdasdasdasdasdasda<p>ddddddddddddddd
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-photo-right">
+                                <img src="style/images/richard-doe.png" alt="richard">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!--<label class="control-label-md1">Title</label><input class="control-label-md2" type="text" size="20" placeholder="Search">-->
                 <!--<br>-->

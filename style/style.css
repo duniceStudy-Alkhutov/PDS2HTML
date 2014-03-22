@@ -951,6 +951,9 @@ label.css-label {
 }
 #todo{
     border: 1px solid #969696;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 1);
+    box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 1);
 }
 #todo:nth-child(1){
     margin-left: 50px;
@@ -959,12 +962,18 @@ label.css-label {
 }
 #todo #list-box>div{
     /*padding: 6px 8px;*/
-    background: #ffffA0;
+    /*background: #ffffA0;*/
     border-bottom: 1px solid #d1e1eb;
 }
-#list-box div>div{
+.todo-line div:first-child{
+    border-right: 1px solid #eddddd;
+}
+.todo-line div:nth-child(2){
+    border-left: 1px solid #eddddd;
+}
+.todo-line>div{
     display: inline-block;
-    padding: 4px;
+    padding: 8px;
 }
 /*#list-box div:nth-child(2){*/
     /*border-right: 1px solid #000000;*/
@@ -975,18 +984,31 @@ label.css-label {
 #list-box input[type=checkbox]:after{
     margin: 15px;
 }
+#add_form>div{
+    display: inline-block;
+    padding: 8px;
+}
 #add2list-box{
-    padding: 6px 0;
-    background: #ffffA0;
+    /*background: #ffffA0;*/
+}
+/*#add2list-box div{*/
+    /*padding: 6px 0;*/
+    /*background: #ffffA0;*/
+/*}*/
+#add_form>div:nth-child(1){
+    border-right: 1px solid #eddddd;
+}
+#add_form>div:nth-child(2){
+    border-left: 1px solid #eddddd;
 }
 #add2list-box img{
+    margin-left: 1px;
     height: 12px;
-    margin-left: 8px;
 }
 #todo #list-box label, #todo #add2list-box input{
     padding-left: 10px;
     border: none;
-    background: #ffffA0;
+    /*background: #ffffA0;*/
     font-size: 14px;
 }
 #list-box label:before{
@@ -999,4 +1021,96 @@ label.css-label {
 #todo #list-box input:focus, #add2list-box input:focus{
     outline: none;
     border: none;
+}
+#notepad{
+    border: 1px solid #969696;
+    -webkit-box-shadow: 0 0 5px 0 rgba(50, 50, 50, 1);
+    -moz-box-shadow:    0 0 5px 0 rgba(50, 50, 50, 1);
+    box-shadow:         0 0 5px 0 rgba(50, 50, 50, 1);
+}
+#notepad{
+    margin: 40px 30px 30px 50px;
+}
+#notepad-content{
+    min-height: 97px;
+    background: url("images/notepad-line.png") repeat-y;
+    line-height: 35px;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+#chat{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
+
+}
+.iamauthor{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.iamauthor>div{
+    display: inline-block;
+    position: relative;
+}
+.chat-text-left{
+    border-left: 3px solid limegreen;
+    padding: 5px 0 0 8px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.chat-text-left span{
+    font-size: 16px;
+}
+.chat-text-left:before{
+    position: absolute;
+    top: 14px;
+    left: -8px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: solid 10px transparent;
+    border-bottom: solid 10px transparent;
+    border-right: solid 10px limegreen;
+}
+
+.chat-photo-left{
+    padding-top: 2px;
+    margin-right: 15px;
+    vertical-align: top;
+}
+.blue_span{
+    color: dodgerblue;
+    font-size: 18px;
+}
+.interlocutor{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.interlocutor>div{
+    display: inline-block;
+    position: relative;
+}
+.chat-text-right{
+    border-right: 3px solid red;
+    padding: 5px 8px 0 0;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: right;
+}
+.chat-text-right:after{
+    position: absolute;
+    top: 14px;
+    right: -8px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: solid 10px transparent;
+    border-bottom: solid 10px transparent;
+    border-left: solid 10px red;
+}
+.chat-photo-right{
+    padding-top: 2px;
+    margin-left: 15px;
+    vertical-align: top;
 }
