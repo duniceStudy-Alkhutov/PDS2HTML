@@ -70,21 +70,26 @@ $(document).ready(function(){
         return false;
     });
     $('#enlarge').click(function(){
-
-        $('#notepad-content').animate({
+        $('#ninja-notepad').fadeIn('slow');
+//        $('#notepad-content').animate({
 //            position: "fixed",
 //            left: "200px",
 //            top: "300px",
 //            zIndex: "999px",
-            width: "500px",
-            height: "400px"
-        }, function(){
-            $('#notepad-content').offset({top:200, left:300})
-                .css({
+//            width: "500px",
+//            height: "400px"
+//        }, function(){
+//            $('#notepad-content').offset({top:200, left:300})
+//                .css({
 //                'position':'fixed',
 //                'z-index': '999',
-                'border':'1px solid #333333'
-            });
-        });
+//                'border':'1px solid #333333'
+//            });
+//        });
+    });
+    $('#ninja-notepad').focusout(function(){
+        var new_text = $('#notepad-notepad-content_2').val();
+        $('#notepad-content').text(new_text);
+        $('#ninja-notepad').fadeOut();
     });
 });
