@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ba8181a-ccf1-47f5-9408-c170fd4c6f58" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/my.js" afterPath="$PROJECT_DIR$/js/my.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/style.css" afterPath="$PROJECT_DIR$/style/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -31,7 +30,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="626" column="43" selection-start="35223" selection-end="35223" vertical-scroll-proportion="-12.222222" vertical-offset="10938" max-vertical-offset="11808">
+            <state line="29" column="57" selection-start="1353" selection-end="1353" vertical-scroll-proportion="-10.555555" vertical-offset="237" max-vertical-offset="11862">
               <folding />
             </state>
           </provider>
@@ -40,7 +39,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1091" column="14" selection-start="21517" selection-end="21517" vertical-scroll-proportion="0.2320819" vertical-offset="19502" max-vertical-offset="21186">
+            <state line="42" column="26" selection-start="652" selection-end="652" vertical-scroll-proportion="0.7765487" vertical-offset="54" max-vertical-offset="21834">
               <folding />
             </state>
           </provider>
@@ -58,7 +57,7 @@
       <file leaf-file-name="my.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/my.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="63" selection-start="2198" selection-end="2198" vertical-scroll-proportion="0.0" vertical-offset="723" max-vertical-offset="1404">
+            <state line="40" column="7" selection-start="1071" selection-end="1374" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1404">
               <folding />
             </state>
           </provider>
@@ -398,19 +397,24 @@
       <created>1395484750789</created>
       <updated>1395484750789</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Chat has completed">
+      <created>1395647265498</created>
+      <updated>1395647265498</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="989" y="24" width="930" height="1056" extended-state="4" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29327902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3404711" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3404711" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -419,7 +423,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957035" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -477,7 +480,8 @@
     <MESSAGE value="W3 validation success" />
     <MESSAGE value="Implemented add-task-box, but needed to improving" />
     <MESSAGE value="Implemented notepad and simple-chat&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented notepad and simple-chat&#10;" />
+    <MESSAGE value="Chat has completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chat has completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -784,13 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/my.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="63" selection-start="2198" selection-end="2198" vertical-scroll-proportion="0.0" vertical-offset="723" max-vertical-offset="1404">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="84" column="3" selection-start="2098" selection-end="2098" vertical-scroll-proportion="0.0" vertical-offset="716" max-vertical-offset="1620">
@@ -798,16 +795,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/my.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="7" selection-start="1071" selection-end="1374" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1404">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="626" column="43" selection-start="35223" selection-end="35223" vertical-scroll-proportion="-12.222222" vertical-offset="10938" max-vertical-offset="11808">
+        <state line="29" column="57" selection-start="1353" selection-end="1353" vertical-scroll-proportion="-10.555555" vertical-offset="237" max-vertical-offset="11862">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1091" column="14" selection-start="21517" selection-end="21517" vertical-scroll-proportion="0.2320819" vertical-offset="19502" max-vertical-offset="21186">
+        <state line="42" column="26" selection-start="652" selection-end="652" vertical-scroll-proportion="0.7765487" vertical-offset="54" max-vertical-offset="21834">
           <folding />
         </state>
       </provider>

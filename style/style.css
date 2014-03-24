@@ -9,25 +9,76 @@ body{
 .wrapper{
     background: white;
 }
-div .header{
+.header{
     height: 55px;
     min-width: 1320px;
     background: #212121;
+    position: relative;
 }
-.header div {
-    float: right;
-    margin-right: 15px;
-    display: block;
-    height: 42px;
+.header>div{
+    display: inline-block;
 }
-.header img{
-    margin: 15px;
-    height: 20px;
+#logo{
+    margin: 12px 0 0 12px;
 }
-#img_bob{
-    height: 28px;
+#user{
+    position: absolute;
+    right: 15px;
+}
+#user>div{
+    display: inline-block;
+}#user>div:nth-child(1){
     margin-top: 8px;
 }
+#user>div:nth-child(2){
+    vertical-align: top;
+    margin-top: 7px;
+}
+#user>div:nth-child(2) img{
+    width: 14px;
+    height: 10px;
+    margin: 10px 0 0 0;
+}
+#user img{
+    margin: 6px 6px 6px 15px;
+    height: 25px;
+}
+#user>div:nth-child(1)>img:last-child{
+    height: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#user span{
+    color: whitesmoke;
+    line-height: 42px;
+    /*vertical-align: top;*/
+    /*margin: 2px;*/
+    /*display: table-cell;*/
+    /*vertical-align: top;*/
+    padding-bottom: 15px;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+/*div .header{*/
+    /*height: 55px;*/
+    /*min-width: 1320px;*/
+    /*background: #212121;*/
+/*}*/
+/*.header div {*/
+    /*float: right;*/
+    /*margin-right: 15px;*/
+    /*display: block;*/
+    /*height: 42px;*/
+/*}*/
+/*.header img{*/
+    /*margin: 15px;*/
+    /*height: 20px;*/
+/*}*/
+/*#img_bob{*/
+    /*height: 28px;*/
+    /*margin-top: 8px;*/
+/*}*/
 
 .content{
 
@@ -68,25 +119,7 @@ div .header{
 .margin-all{
 
 }
-#user {
-    margin-top: 6px;
-}
-#user img{
-    margin: 6px;
-    height: 25px;
-}
-#user span{
-    color: whitesmoke;
-    line-height: 42px;
-    /*vertical-align: top;*/
-    /*margin: 2px;*/
-    /*display: table-cell;*/
-    /*vertical-align: top;*/
-    padding-bottom: 15px;
-    font-family: 'Open Sans',sans-serif;
-    font-size: 15px;
-    text-align: center;
-}
+
 /********************************************************/
 #navigation_left_panel {
 }
@@ -759,6 +792,9 @@ label.css-label {
     width:  80px;
     background: #fafafa;
     vertical-align: top;
+}
+.calendar-table tr td:hover{
+    background: #ededed;
 }
 .calendar-table table tr td>div{
     margin: 2px 2px;
