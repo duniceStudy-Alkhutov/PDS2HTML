@@ -1048,19 +1048,25 @@ label.css-label {
 .iamauthor{
     display: inline-block;
     margin-bottom: 20px;
+    width: 100%;
 }
 .iamauthor>div{
     display: inline-block;
     position: relative;
+}
+.iamauthor>div:nth-child(2){
+    width: 75%;
+    float: right;
 }
 .chat-text-left{
     border-left: 3px solid limegreen;
     padding: 5px 0 0 8px;
     font-size: 14px;
     line-height: 22px;
+    background: #f8f8f8;
+    min-height: 71px;
 }
 .chat-text-left span{
-    font-size: 16px;
 }
 .chat-text-left:before{
     position: absolute;
@@ -1086,10 +1092,14 @@ label.css-label {
 .interlocutor{
     display: inline-block;
     margin-bottom: 20px;
+    width: 100%;
 }
 .interlocutor>div{
     display: inline-block;
     position: relative;
+}
+.interlocutor>div:nth-child(1){
+    width: 75%;
 }
 .chat-text-right{
     border-right: 3px solid red;
@@ -1097,6 +1107,8 @@ label.css-label {
     font-size: 14px;
     line-height: 22px;
     text-align: right;
+    background: #f8f8f8;
+    min-height: 71px;
 }
 .chat-text-right:after{
     position: absolute;
@@ -1110,7 +1122,51 @@ label.css-label {
     border-left: solid 10px red;
 }
 .chat-photo-right{
+    float: right;
     padding-top: 2px;
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
     vertical-align: top;
+}
+#send-msg-box{
+    padding: 10px;
+    background: #e9eff3;
+    position: relative;
+}
+#send-msg{
+    height: 24px;
+    border: none;
+    padding-left: 5px;
+    padding-right: 20px;
+}
+#send-msg:focus{
+    outline: none;
+    border: none;
+}
+#send-form{
+    width: 100%;
+}
+#send-form>div{
+    display: table-cell;
+}
+#send-form>div:nth-child(1){
+    min-width: 300px;
+    width: 100%;
+}
+#send-form>div:nth-child(1) input{
+    width: 100%;
+}
+#send-form>div:nth-child(2){
+    /*float: right;*/
+    width: 43px;
+}
+#submit-msg{
+    background: url("images/ok-send.png") no-repeat right;
+    border: none;
+    height: 24px;
+    width: 43px;
+}
+#submit-msg:focus{
+    border: none;
+    outline: none;
 }
